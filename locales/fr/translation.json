@@ -1,3 +1,11 @@
 {
+  "language": "français",
+
+  "navbar_home": "Accueil",
+  "navbar_rooms": "Chambres",
+  "navbar_prices": "Tarifs",
+  "navbar_contact": "Contact",
+  "navbar_bookBtn": "Réserver",
+
   "welcomeMessage": "Bonjour le monde!"
 }

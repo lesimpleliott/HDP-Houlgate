@@ -1,3 +1,11 @@
 {
+  "language": "english",
+
+  "navbar_home": "Home",
+  "navbar_rooms": "Rooms",
+  "navbar_prices": "Prices",
+  "navbar_contact": "Contact",
+  "navbar_bookBtn": "Book",
+
   "welcomeMessage": "Hello World!"
 }
