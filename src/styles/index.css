@@ -1,6 +1,12 @@
-/* FONT-AWESOME */
-/* @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"); */
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  @apply font-main text-textColor bg-background;
+}
+
+/* Active <Navlink /> - ReactRouterDom */
+.active {
+  @apply text-primary-500 font-medium;
+}

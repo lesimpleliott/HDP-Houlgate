@@ -1,20 +1,3 @@
-// @ts-nocheck - Ligne à supprimer lors de l'utilisation du fichier
-/**
-Fichier de configuration de la librairie i18next
-@see {@link https://react.i18next.com/ | Site de i18next}
-Voir les fichiers de traduction dans le dossier locales à la racine du dossier
-locales/fr/translation.json et locales/en/translation.json
-
-Utilisation:
-import { useTranslation } from "react-i18next";
-const { t } = useTranslation();
-<h1>{t("welcomeMessage")}</h1>
-
-Utilisation avec paramètres (compteur):
-<p>{t("description", {count: 1})}</p>
-<p>{t("description", {count: 2})}</p>
-*/
-
 import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
 import en from "../../locales/en/translation.json";
@@ -29,7 +12,7 @@ const resources = {
   },
 };
 
-i18n.use(initReactI18next).init({
+export default i18n.use(initReactI18next).init({
   resources,
   debug: false, // true: active le mode debug
   lng: "fr", // langue par défaut
@@ -39,4 +22,8 @@ i18n.use(initReactI18next).init({
   },
 });
 
-export default i18n;
+export const toggleLanguage = () => {
+  const lang = i18n.language === "fr" ? "en" : "fr";
+  i18n.changeLanguage(lang);
+  localStorage.setItem("lang", lang);
+};
