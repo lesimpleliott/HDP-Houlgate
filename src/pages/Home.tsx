@@ -1,9 +1,11 @@
-import { t } from "i18next";
+import BookingForm from "../layouts/BookingForm/BookingForm";
 
 const Home = () => {
   return (
     <main>
-      <h1>{t("welcomeMessage")}</h1>
+      <section className="flex flex-col items-center justify-center">
+        <BookingForm />
+      </section>
     </main>
   );
 };

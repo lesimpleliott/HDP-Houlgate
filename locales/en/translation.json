@@ -7,5 +7,11 @@
   "navbar_contact": "Contact",
   "navbar_bookBtn": "Book",
 
-  "welcomeMessage": "Hello World!"
+  "checkin": "Check-in",
+  "checkout": "Check-out",
+  "occupation": "Occupation",
+  "search": "Search",
+  "night_one": "night",
+  "night_other": "nights",
+  "from": "from"
 }

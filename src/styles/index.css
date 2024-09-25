@@ -6,6 +6,10 @@ body {
   @apply font-main text-textColor bg-background;
 }
 
+main {
+  @apply mt-16;
+}
+
 /* Active <Navlink /> - ReactRouterDom */
 .active {
   @apply text-primary-500 font-medium;
