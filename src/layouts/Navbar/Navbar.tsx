@@ -9,7 +9,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`${menuIsOpen ? "max-h-[1000px]" : "max-h-16"} bg-background md:from-background fixed top-0 w-full overflow-hidden py-2 shadow-md transition-all duration-300 md:bg-transparent md:bg-gradient-to-b md:from-40% md:to-transparent md:shadow-none md:backdrop-blur`}
+      className={`${menuIsOpen ? "max-h-[1000px]" : "max-h-16"} bg-background md:from-background fixed top-0 z-20 w-full overflow-hidden py-2 shadow-md transition-all duration-300 md:bg-transparent md:bg-gradient-to-b md:from-40% md:to-transparent md:shadow-none md:backdrop-blur`}
     >
       <div
         className={`flex max-w-7xl flex-col gap-2 px-4 md:mx-auto md:flex-row md:px-10`}
@@ -30,7 +30,7 @@ const Navbar = () => {
           className={`flex flex-1 flex-col gap-2 md:flex-row md:items-center md:justify-end md:gap-4`}
         >
           <MenuLinks className="flex flex-col md:flex-row md:gap-4" />
-          <MenuSettings className="flex justify-center gap-10 md:gap-2" />
+          <MenuSettings className="flex justify-center gap-10 md:gap-2 py-4 md:py-0" />
         </section>
       </div>
     </nav>
