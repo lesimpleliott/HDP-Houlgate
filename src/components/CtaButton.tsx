@@ -1,28 +1,28 @@
 import { NavLink } from "react-router-dom";
-
-type CtaButtonProps = {
-  type: "link" | "Navlink" | "button";
-  to?: string; // seulement pour type="link" et type="Navlink"
-  onClick?: () => void; // seulement pour type="button"
-  children: React.ReactNode; // contenu du bouton
-  className?: string;
-};
+import { CtaButtonProps } from "../types/CtaButtonProps";
 
 const CtaButton = ({
   type,
-  to,
   onClick,
   children,
   className,
+  href,
+  target,
+  to,
 }: CtaButtonProps) => {
   // Styles de base du bouton
   const baseStyle =
     "bg-primary-500 hover:bg-primary-400 min-w-24 h-10 text-sm rounded-full px-4 flex justify-center items-center font-medium text-white shadow-md";
 
   // Rendu conditionnel du bouton en tant que lien <a>
-  if (type === "link" && to) {
+  if (type === "link") {
     return (
-      <a href={to} className={`${baseStyle} ${className}`} onClick={onClick}>
+      <a
+        href={href}
+        target={target}
+        className={`${baseStyle} ${className}`}
+        onClick={onClick}
+      >
         {children}
       </a>
     );
