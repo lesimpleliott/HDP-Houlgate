@@ -1,11 +1,9 @@
-import BookingForm from "../layouts/BookingForm/BookingForm";
+import BookBanner from "../layouts/BookBanner";
 
 const Home = () => {
   return (
-    <main>
-      <section className="flex flex-col items-center justify-center">
-        <BookingForm />
-      </section>
+    <main className="flex flex-col items-center">
+      <BookBanner />
     </main>
   );
 };
