@@ -4,11 +4,12 @@ type BookingFormElementBase = {
     src: string;
     alt?: string;
   };
-  type: "button" | "input";
+  type: "link" | "input";
 };
 
 // Propriétés pour le champ (input)
 type BookingFormFieldProps = BookingFormElementBase & {
+  href?: never;
   label: string;
   inputProps: React.InputHTMLAttributes<HTMLInputElement>;
   price?: never;
@@ -16,8 +17,9 @@ type BookingFormFieldProps = BookingFormElementBase & {
   onClick?: never;
 };
 
-// Propriétés pour le bouton
+// Propriétés pour le lien (bouton)
 type BookingFormSubmitProps = BookingFormElementBase & {
+  href: string;
   label?: never;
   inputProps?: never;
   price: number;
@@ -25,5 +27,5 @@ type BookingFormSubmitProps = BookingFormElementBase & {
   onClick?: React.MouseEventHandler<HTMLButtonElement>;
 };
 
-// Type du formulaire qui peut être soit un input, soit un bouton
+// Type du formulaire qui peut être soit un input, soit un lien (bouton)
 export type BookingFormProps = BookingFormFieldProps | BookingFormSubmitProps;

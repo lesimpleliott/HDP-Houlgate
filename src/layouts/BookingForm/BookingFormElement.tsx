@@ -8,7 +8,7 @@ const BookingFormElement = ({
   inputProps,
   price,
   nightCount,
-  onClick,
+  href,
 }: BookingFormProps) => {
   const { t } = useTranslation();
 
@@ -36,10 +36,11 @@ const BookingFormElement = ({
   }
 
   // Styles spécifiques champ de formulaire de type bouton
-  if (type === "button" && price !== undefined && nightCount !== undefined) {
+  if (type === "link" && price !== undefined && nightCount !== undefined) {
     return (
-      <button
-        onClick={onClick}
+      <a
+        href={href}
+        target="_blank"
         className={`bg-primary-500 hover:bg-primary-400 ${buttonBase}`}
       >
         <img src={icon.src} alt={icon.alt} className={`${iconBase}`} />
@@ -51,7 +52,7 @@ const BookingFormElement = ({
             className={`${inputBase} text-white`}
           >{`${t("from")} ${price}€`}</p>
         </div>
-      </button>
+      </a>
     );
   }
 
