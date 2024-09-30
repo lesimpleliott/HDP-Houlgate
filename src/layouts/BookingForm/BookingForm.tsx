@@ -105,7 +105,7 @@ const BookingForm = ({ className }: { className?: string }) => {
 
         <BookingFormElement
           type="input"
-          icon={{ src: "/icons/occupation.svg", alt: "Occupation icon" }}
+          icon={{ src: "/icons/users.svg", alt: "Guests icon" }}
           label={t("occupation")}
           inputProps={{
             id: "occupation",
