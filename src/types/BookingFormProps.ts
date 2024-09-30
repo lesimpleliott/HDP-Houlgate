@@ -5,6 +5,7 @@ type BookingFormElementBase = {
     alt?: string;
   };
   type: "link" | "input";
+  className?: string;
 };
 
 // Propriétés pour le champ (input)

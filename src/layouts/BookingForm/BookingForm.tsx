@@ -71,10 +71,11 @@ const BookingForm = ({ className }: { className?: string }) => {
 
   return (
     <form
-      className={`${className} m-4 w-fit rounded-3xl bg-white/30 p-2 backdrop-blur md:rounded-full`}
+      className={`${className} m-4 rounded-3xl bg-white/30 p-2 shadow-lg backdrop-blur md:rounded-full`}
     >
       <div className="grid grid-cols-2 gap-2 overflow-hidden rounded-2xl leading-5 md:flex md:gap-0 md:divide-x md:rounded-full">
         <BookingFormElement
+          className="md:pl-8"
           type="input"
           icon={{ src: "/icons/checkin.svg", alt: "Checkin icon" }}
           label={t("checkin")}
@@ -84,6 +85,7 @@ const BookingForm = ({ className }: { className?: string }) => {
             min: getTodayDate(),
             value: checkin,
             onChange: handleCheckinChange,
+            className: "max-w-32",
           }}
         />
 
@@ -97,6 +99,7 @@ const BookingForm = ({ className }: { className?: string }) => {
             min: checkin,
             value: checkout,
             onChange: handleCheckoutChange,
+            className: "max-w-32",
           }}
         />
 
@@ -110,10 +113,12 @@ const BookingForm = ({ className }: { className?: string }) => {
             value: occupation,
             min: 1,
             onChange: (e) => setOccupation(parseInt(e.target.value)),
+            className: "max-w-24",
           }}
         />
 
         <BookingFormElement
+          className="md:pr-8"
           type="link"
           href={buildUrl()}
           icon={{ src: "/icons/search.svg", alt: "Search icon" }}
