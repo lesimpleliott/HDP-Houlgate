@@ -15,7 +15,7 @@ export default {
           800: "#1B5F3C",
           900: "#12472E",
         },
-        secondary: "#E04A54",
+        accent: "#E04A54",
         background: "#FBFBFB",
         textColor: "#444444",
       },

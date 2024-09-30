@@ -9,11 +9,17 @@
 
   "checkin": "Arrivée",
   "checkout": "Départ",
-  "occupation": "Occupation",
+  "occupation": "Voyageurs",
   "search": "Rechercher",
   "night_one": "nuit",
   "night_other": "nuits",
   "from": "à partir de",
 
-  "bookBanner_title": "Réservez votre séjour dès à présent"
+  "bookBanner_title": "Réservez votre séjour dès à présent",
+
+  "home_title": "Hôtel de la Plage",
+  "home_paragraph": [
+    "À deux pas de la <strong>plage</strong> et à proximité immédiate des restaurants, des commerces, du <strong>casino</strong> et du marché. Notre petit hôtel de charme vous fera profiter pleinement d’Houlgate, <strong>«<nbsp/>Perle de la Côte fleurie<nbsp/>»</strong>.",
+    "Sa localisation entre <strong>Cabourg</strong> et <strong>Deauville</strong> sera un point de départ idéal pour découvrir notre belle région."
+  ]
 }

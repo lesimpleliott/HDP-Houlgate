@@ -6,11 +6,38 @@ body {
   @apply font-main text-textColor bg-background;
 }
 
+h1 {
+  font-family: "EB Garamond", serif;
+}
+
+strong {
+  @apply text-primary-500 italic;
+}
+
 main {
-  @apply mt-16;
+  @apply mt-16 flex flex-col gap-10;
 }
 
 /* Active <Navlink /> - ReactRouterDom */
 .active {
   @apply text-primary-500 font-medium;
 }
+
+/* *** *** *** *** *** *** *** ***  */
+/* DEV CLASS */
+.test {
+  @apply border border-gray-500;
+}
+.test-red {
+  @apply border border-red-500;
+}
+.test-blue {
+  @apply border border-blue-500;
+}
+.test-green {
+  @apply border border-green-500;
+}
+.test-pink {
+  @apply border border-pink-500;
+}
+/* *** *** *** *** *** *** *** ***  */

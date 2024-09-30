@@ -9,11 +9,17 @@
 
   "checkin": "Check-in",
   "checkout": "Check-out",
-  "occupation": "Occupation",
+  "occupation": "Travelers",
   "search": "Search",
   "night_one": "night",
   "night_other": "nights",
   "from": "from",
 
-  "bookBanner_title": "Book your stay now"
+  "bookBanner_title": "Book your stay now",
+
+  "home_title": "Hôtel de la Plage",
+  "home_paragraph": [
+    "A stone's throw from the <strong>beach</strong> and close to restaurants, shops, the <strong>casino</strong> and the market. Our charming little hotel will allow you to fully enjoy Houlgate, <strong>«<nbsp/>Pearl of the Flowered Coast<nbsp/>»</strong>.",
+    " Its location between <strong>Cabourg</strong> and <strong>Deauville</strong> will be an ideal starting point to discover our beautiful region."
+  ]
 }
