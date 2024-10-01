@@ -10,10 +10,10 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`${menuIsOpen ? "max-h-[1000px]" : "max-h-16"} bg-background md:from-background fixed top-0 z-20 w-full overflow-hidden py-2 shadow-md transition-all duration-300 md:bg-transparent md:bg-gradient-to-b md:from-40% md:to-transparent md:shadow-none md:backdrop-blur`}
+      className={`${menuIsOpen ? "max-h-[1000px]" : "max-h-16"} fixed top-0 z-20 w-full overflow-hidden bg-background py-2 shadow-md transition-all duration-300 md:bg-background/60 md:shadow-none md:backdrop-blur`}
     >
       <div
-        className={`flex max-w-7xl flex-col gap-2 px-4 md:mx-auto md:flex-row md:px-10`}
+        className={`max-w-custom flex flex-col gap-2 md:mx-auto md:flex-row`}
       >
         {/* LOGO + BURGER BUTTON */}
         <section className="flex items-center justify-between">

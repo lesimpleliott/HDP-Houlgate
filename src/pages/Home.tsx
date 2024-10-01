@@ -5,7 +5,7 @@ import HeroBanner from "../layouts/HeroBanner";
 const Home = () => {
   return (
     <main className="flex flex-col items-center">
-      <HeroBanner />
+      <HeroBanner className="md:mt-4" />
       <Facilities />
       <BookBanner />
     </main>
