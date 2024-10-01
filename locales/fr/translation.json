@@ -15,11 +15,41 @@
   "night_other": "nuits",
   "from": "à partir de",
 
-  "bookBanner_title": "Réservez votre séjour dès à présent",
-
   "home_title": "Hôtel de la Plage",
   "home_paragraph": [
     "À deux pas de la <strong>plage</strong> et à proximité immédiate des restaurants, des commerces, du <strong>casino</strong> et du marché. Notre petit hôtel de charme vous fera profiter pleinement d’Houlgate, <strong>«<nbsp/>Perle de la Côte fleurie<nbsp/>»</strong>.",
     "Sa localisation entre <strong>Cabourg</strong> et <strong>Deauville</strong> sera un point de départ idéal pour découvrir notre belle région."
-  ]
+  ],
+
+  "bookBanner_title": "Réservez votre séjour dès à présent",
+
+  "facilities": "Services",
+  "facilities_paragraph": [
+    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum et facere eaque eveniet voluptate omnis hic cum earum! Minus cumque, earum maiores aliquam rerum sapiente blanditiis, quibusdam dicta dolorum alias neque sed, voluptatibus eaque consequatur natus? Hic veniam natus dicta!",
+    "Lorem ipsum dolor sit amet consectetur adipisicing. Rerum et facere eaque eveniet voluptate omnis hic cum earum! Minus cumque, earum maiores aliquam rerum sapiente blanditiis, quibusdam dicta dolorum alias neque sed, voluptatibus eaque consequatur natus? Hic veniam natus dicta!"
+  ],
+  "facility.breakfast": {
+    "title": "Petit-déjeuner",
+    "description": "avec supplément"
+  },
+  "facility.wifi": {
+    "title": "Wifi",
+    "description": "gratuit & illimité"
+  },
+  "facility.beach": {
+    "title": "Devant la plage",
+    "description": "à une minute à pied"
+  },
+  "facility.pet": {
+    "title": "Animaux admis",
+    "description": "avec supplément"
+  },
+  "facility.handicap": {
+    "title": "Accès PMR",
+    "description": "chambre adaptée"
+  },
+  "facility.parking": {
+    "title": "Parking gratuit",
+    "description": "public face à l'hôtel"
+  }
 }

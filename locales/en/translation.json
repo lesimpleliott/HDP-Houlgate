@@ -15,11 +15,41 @@
   "night_other": "nights",
   "from": "from",
 
-  "bookBanner_title": "Book your stay now",
-
   "home_title": "Hôtel de la Plage",
   "home_paragraph": [
     "A stone's throw from the <strong>beach</strong> and close to restaurants, shops, the <strong>casino</strong> and the market. Our charming little hotel will allow you to fully enjoy Houlgate, <strong>«<nbsp/>Pearl of the Flowered Coast<nbsp/>»</strong>.",
     " Its location between <strong>Cabourg</strong> and <strong>Deauville</strong> will be an ideal starting point to discover our beautiful region."
-  ]
+  ],
+
+  "bookBanner_title": "Book your stay now",
+
+  "facilities": "Facilities",
+  "facilities_paragraph": [
+    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum et facere eaque eveniet voluptate omnis hic cum earum! Minus cumque, earum maiores aliquam rerum sapiente blanditiis, quibusdam dicta dolorum alias neque sed, voluptatibus eaque consequatur natus? Hic veniam natus dicta!",
+    "Lorem ipsum dolor sit amet consectetur adipisicing. Rerum et facere eaque eveniet voluptate omnis hic cum earum! Minus cumque, earum maiores aliquam rerum sapiente blanditiis, quibusdam dicta dolorum alias neque sed, voluptatibus eaque consequatur natus? Hic veniam natus dicta!"
+  ],
+  "facility.breakfast": {
+    "title": "Breakfast",
+    "description": "with supplement"
+  },
+  "facility.wifi": {
+    "title": "Wifi",
+    "description": "free & unlimited"
+  },
+  "facility.beach": {
+    "title": "On the beach",
+    "description": "one minute walk"
+  },
+  "facility.pet": {
+    "title": "Pets allowed",
+    "description": "with supplement"
+  },
+  "facility.handicap": {
+    "title": "Disabled access",
+    "description": "adapted room"
+  },
+  "facility.parking": {
+    "title": "Free parking",
+    "description": "public in front of the hotel"
+  }
 }

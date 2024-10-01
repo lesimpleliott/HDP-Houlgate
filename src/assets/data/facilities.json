@@ -1,0 +1,32 @@
+[
+  {
+    "title": "facility.breakfast.title",
+    "description": "facility.breakfast.description",
+    "icon": "icons/breakfast.svg"
+  },
+  {
+    "title": "facility.wifi.title",
+    "description": "facility.wifi.description",
+    "icon": "icons/wifi.svg"
+  },
+  {
+    "title": "facility.beach.title",
+    "description": "facility.beach.description",
+    "icon": "icons/beach.svg"
+  },
+  {
+    "title": "facility.pet.title",
+    "description": "facility.pet.description",
+    "icon": "icons/pet.svg"
+  },
+  {
+    "title": "facility.handicap.title",
+    "description": "facility.handicap.description",
+    "icon": "icons/handicap.svg"
+  },
+  {
+    "title": "facility.parking.title",
+    "description": "facility.parking.description",
+    "icon": "icons/parking.svg"
+  }
+]
