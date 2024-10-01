@@ -9,7 +9,7 @@ export default {
           200: "#B7E9CB",
           300: "#8BDBAB",
           400: "#5FCD8B",
-          500: "#36A765",
+          500: "#34A765",
           600: "#2D8F58",
           700: "#24774A",
           800: "#1B5F3C",
@@ -21,6 +21,7 @@ export default {
       },
       fontFamily: {
         main: ["Roboto, sans-serif"],
+        title: ["EB Garamond, serif"],
       },
     },
   },

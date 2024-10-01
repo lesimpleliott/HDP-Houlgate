@@ -22,7 +22,7 @@ const HeroBanner = ({ className }: { className?: string }) => {
 
   // Element commun à la version mobile et desktop
   const titleContent = (
-    <h1 className="text-center text-5xl font-medium text-white md:text-left md:text-primary-500">
+    <h1 className="font-title text-center text-5xl font-medium text-white md:text-left md:text-primary-500">
       <span className="flex flex-col items-center justify-center gap-2 md:flex-row md:items-end md:justify-start">
         <LogoHDP className="w-16 md:w-12" />
         <p>Houlgate</p>
