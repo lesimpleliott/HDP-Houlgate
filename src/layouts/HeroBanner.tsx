@@ -1,11 +1,8 @@
 import { useEffect, useState } from "react";
-import { useTranslation } from "react-i18next";
-import LogoHDP from "../components/LogoHDP";
 import { i18nParagraphs } from "../utils/i18nParagraphs";
 import BookingForm from "./BookingForm/BookingForm";
 
 const HeroBanner = ({ className }: { className?: string }) => {
-  const { t } = useTranslation();
   const [isMobile, setIsMobile] = useState<boolean>(false);
 
   const handleResize = () => {
@@ -20,18 +17,20 @@ const HeroBanner = ({ className }: { className?: string }) => {
     };
   }, []);
 
-  // Element commun à la version mobile et desktop
-  const titleContent = (
-    <h1 className="font-title text-center text-5xl font-medium text-white md:text-left md:text-primary-500">
-      <span className="flex flex-col items-center justify-center gap-2 md:flex-row md:items-end md:justify-start">
-        <LogoHDP className="w-16 md:w-12" />
-        <p>Houlgate</p>
-      </span>
-      <p className="mr-1 inline">{t("home_title")}</p>
-      <i className="fa-solid fa-star inline align-super text-xs"></i>
-      <i className="fa-solid fa-star inline align-super text-xs"></i>
-    </h1>
-  );
+  // // Element commun à la version mobile et desktop
+  // // TITRE PRINCIPAL (H1) Dans le cas de la suppression du logo SVG
+  // // !! Reimporter {t} depuis react-i18next !!
+  // const titleContent = (
+  //   <h1 className="font-title text-center text-5xl font-medium text-white md:text-left md:text-primary-500">
+  //     <span className="flex flex-col items-center justify-center gap-2 md:flex-row md:items-end md:justify-start">
+  //       <LogoHDP className="w-16 md:w-12" />
+  //       <p>Houlgate</p>
+  //     </span>
+  //     <p className="mr-1 inline">{t("home_title")}</p>
+  //     <i className="fa-solid fa-star inline align-super text-xs"></i>
+  //     <i className="fa-solid fa-star inline align-super text-xs"></i>
+  //   </h1>
+  // );
 
   // PARAGRAPHE
   const textContent = i18nParagraphs("home_paragraph");
@@ -48,10 +47,17 @@ const HeroBanner = ({ className }: { className?: string }) => {
       {isMobile && (
         <section
           id="heroBanner-mobile"
-          className={`flex flex-col items-center gap-4 pt-16 md:hidden ${className}`}
+          className={`flex flex-col items-center gap-4 pt-40 md:hidden ${className}`}
         >
           {/* Textes */}
-          {titleContent}
+          {/* {titleContent} */}
+          <h1 className="w-full">
+            <img
+              src="public/LOGO_HDP_2024_Horizontal_White.svg"
+              alt="Logo de l'Hôtel de la Plage** à Houlgate"
+              className="mx-auto w-full max-w-96 px-8"
+            />
+          </h1>
           <div className="order-3 flex flex-col gap-3 px-4 md:px-20">
             {textContent}
           </div>
@@ -78,8 +84,15 @@ const HeroBanner = ({ className }: { className?: string }) => {
             className={`relative hidden flex-wrap overflow-hidden rounded-bl-[75px] rounded-tr-[75px] bg-white shadow-lg md:flex ${className}`}
           >
             {/* Conteneur de texte */}
-            <div className="flex w-1/2 flex-col gap-4 px-10 pb-36 pt-10">
-              {titleContent}
+            <div className="flex w-1/2 flex-col gap-6 px-10 pb-36 pt-10">
+              {/* {titleContent} */}
+              <h1 className="w-full">
+                <img
+                  src="public/LOGO_HDP_2024_Horizontal.svg"
+                  alt="Logo de l'Hôtel de la Plage** à Houlgate"
+                  className="mx-auto w-full max-w-52"
+                />
+              </h1>
               <div className="flex flex-col gap-2">{textContent}</div>
             </div>
 
