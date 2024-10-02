@@ -1,0 +1,20 @@
+[
+  {
+    "type": "phone",
+    "text": "+33 (0)2 31 28 70 60",
+    "link": "tel:+33231287060",
+    "targetBlank": false
+  },
+  {
+    "type": "mail",
+    "text": "contact@hoteldelaplage-houlgate.fr",
+    "link": "mailto:contact@hoteldelaplage-houlgate.fr",
+    "targetBlank": false
+  },
+  {
+    "type": "external",
+    "text": "99 rue des Bains - 14510 Houlgate",
+    "link": "https://maps.app.goo.gl/sigFHq8kHdtoNEj86",
+    "targetBlank": true
+  }
+]

@@ -51,6 +51,22 @@
     }
   },
 
+  "footer": {
+    "navigation": "Navigation",
+    "informations": "Informations",
+    "legal": "Legal",
+    "language": "Language",
+
+    "booking": "Booking",
+    "services": "Facilities",
+    "reviews": "Reviews",
+    "access": "access",
+    "faq": "FAQs",
+    "terms": "Terms and Conditions",
+    "legalNotice": "Legal Notice",
+    "privacy": "Privacy Policy"
+  },
+
   "home": {
     "title": "Hôtel de la Plage",
     "paragraph": [

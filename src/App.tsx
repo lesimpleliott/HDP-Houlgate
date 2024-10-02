@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Footer from "./layouts/Footer/Footer";
 import Navbar from "./layouts/Navbar/Navbar";
 import Home from "./pages/Home";
 import { initLanguage } from "./utils/i18n";
@@ -20,6 +21,7 @@ const App = () => {
         <Route path="/" element={<Home />} />
         {/* <Route path="*" element={<Error />} /> */}
       </Routes>
+      <Footer />
     </BrowserRouter>
   );
 };

@@ -46,10 +46,10 @@ export default i18n.use(initReactI18next).init({
 });
 
 // Fonction pour basculer entre les langues ou définir une langue spécifique
-export const toggleLanguage = (langProp?: "fr" | "en") => {
+export const toggleLanguage = (langProp?: string) => {
   let lang;
   if (langProp) {
-    lang = langProp;
+    lang = langProp as "fr" | "en";
   } else {
     lang = i18n.language === "fr" ? "en" : "fr";
   }
