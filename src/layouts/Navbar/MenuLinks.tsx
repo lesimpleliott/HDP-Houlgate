@@ -3,10 +3,10 @@ import { NavLink } from "react-router-dom";
 import useStoreMenu from "../../stores/menu.store";
 
 const menuItems = [
-  { title: "navbar_home", link: "/" },
-  { title: "navbar_rooms", link: "/rooms" },
-  { title: "navbar_prices", link: "/prices" },
-  { title: "navbar_contact", link: "/contact" },
+  { title: "menu.home", link: "/" },
+  { title: "menu.rooms", link: "/rooms" },
+  { title: "menu.prices", link: "/prices" },
+  { title: "menu.contact", link: "/contact" },
 ];
 
 const MenuLinks = ({ className }: { className?: string }) => {

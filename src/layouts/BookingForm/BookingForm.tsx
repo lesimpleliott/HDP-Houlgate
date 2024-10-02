@@ -51,7 +51,7 @@ const BookingForm = ({ className }: { className?: string }) => {
     // Calcule le nouveau checkout basé sur le nombre de nuits
     const newCheckoutDate = new Date(newCheckinDate);
     newCheckoutDate.setDate(newCheckoutDate.getDate() + nightCount);
-    setCheckout(newCheckoutDate.toISOString().split("T")[0]);
+    setCheckout(newCheckoutDate.toISOString().split("bookingForm.T")[0]);
   };
 
   const buildUrl = () => {
@@ -78,7 +78,7 @@ const BookingForm = ({ className }: { className?: string }) => {
           className="md:pl-8"
           type="input"
           icon={{ src: "/icons/checkin.svg", alt: "Checkin icon" }}
-          label={t("checkin")}
+          label={t("bookingForm.checkin")}
           inputProps={{
             id: "checkin",
             type: "date",
@@ -92,7 +92,7 @@ const BookingForm = ({ className }: { className?: string }) => {
         <BookingFormElement
           type="input"
           icon={{ src: "/icons/checkout.svg", alt: "Checkout icon" }}
-          label={t("checkout")}
+          label={t("bookingForm.checkout")}
           inputProps={{
             id: "checkout",
             type: "date",
@@ -106,7 +106,7 @@ const BookingForm = ({ className }: { className?: string }) => {
         <BookingFormElement
           type="input"
           icon={{ src: "/icons/users.svg", alt: "Guests icon" }}
-          label={t("occupation")}
+          label={t("bookingForm.occupation")}
           inputProps={{
             id: "occupation",
             type: "number",

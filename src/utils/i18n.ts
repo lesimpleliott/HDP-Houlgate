@@ -45,9 +45,14 @@ export default i18n.use(initReactI18next).init({
   },
 });
 
-// Fonction pour basculer entre les langues
-export const toggleLanguage = () => {
-  const lang = i18n.language === "fr" ? "en" : "fr";
+// Fonction pour basculer entre les langues ou définir une langue spécifique
+export const toggleLanguage = (langProp?: "fr" | "en") => {
+  let lang;
+  if (langProp) {
+    lang = langProp;
+  } else {
+    lang = i18n.language === "fr" ? "en" : "fr";
+  }
   i18n.changeLanguage(lang);
   localStorage.setItem("lang", lang);
 };

@@ -13,13 +13,13 @@ const MenuSettings = ({ className }: { className?: string }) => {
       <CtaButton
         type="link"
         // RESERVIT / Accès général
-        href={`https://hotel.reservit.com/reservit/reserhotel.php?lang=${i18n.language}&hotelid=237827`} 
+        href={`https://hotel.reservit.com/reservit/reserhotel.php?lang=${i18n.language}&hotelid=237827`}
         // RESERVIT / Accès par un calendrier des tarifs et disponibilités
         // to={`https://hotel.reservit.com/reservit/reserhotel.php?lang=${i18n.language}&action=tabavail&hotelid=237827`}
         target="_blank"
         onClick={() => setMenuIsOpen(false)}
       >
-        {t("navbar_bookBtn")}
+        {t("common.book")}
       </CtaButton>
       <button
         onClick={() => {
@@ -30,11 +30,11 @@ const MenuSettings = ({ className }: { className?: string }) => {
       >
         <img
           src={`/flags/${i18n.language}.svg`}
-          alt={t("language")}
+          alt={t(`language.${i18n.language}`)}
           className="h-9 min-w-9 cursor-pointer rounded-full object-cover shadow-md"
         />
         <p className="min-w-20 text-left md:hidden">
-          {capitalize(t("language"))}
+          {capitalize(t(`language.${i18n.language}`))}
         </p>
       </button>
     </div>

@@ -1,9 +1,9 @@
 import { useTranslation } from "react-i18next";
-import facilitiesData from "../../assets/data/facilities.json";
 import SectionHDP from "../../components/SectionHDP/SectionHDP";
 import SectionTitle from "../../components/SectionHDP/SectionTitle";
 import { i18nParagraphs } from "../../utils/i18nParagraphs";
 import FacilityCard from "./FacilityCard";
+import { facilitiesData } from "./facilitiesData";
 
 type FacilitiesProps = {
   icon: string;
@@ -16,11 +16,11 @@ const Facilities = ({ className }: { className?: string }) => {
   return (
     <SectionHDP className={`${className} flex flex-col gap-6`} reversedColor>
       <div className="flex flex-col gap-4 text-white">
-        <SectionTitle title={t("facilities")} />
-        {i18nParagraphs("facilities_paragraph")}
+        <SectionTitle title={t("facilities.title")} />
+        {i18nParagraphs("facilities.paragraph")}
       </div>
 
-      <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 ">
+      <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
         {facilitiesData.map((facility: FacilitiesProps, index: number) => (
           <FacilityCard
             key={index}

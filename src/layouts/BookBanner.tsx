@@ -8,7 +8,7 @@ const BookBanner = ({ className }: { className?: string }) => {
       className={`bg-primary-500 flex w-full flex-col items-center justify-center py-6 ${className}`}
     >
       <h2 className="px-10 text-center text-2xl font-semibold text-white">
-        {t("bookBanner_title")}
+        {t("bookBanner.title")}
       </h2>
       <BookingForm />
     </section>

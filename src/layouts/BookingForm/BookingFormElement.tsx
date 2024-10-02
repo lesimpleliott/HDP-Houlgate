@@ -52,9 +52,11 @@ const BookingFormElement = ({
         <img src={icon.src} alt={icon.alt} className={`${iconBase}`} />
         <div className={`${textWrapperBase}`}>
           <p className={`${lineOne} text-white`}>
-            {`${nightCount} ${t("night", { count: nightCount })}`}
+            {`${nightCount} ${t("bookingForm.night", { count: nightCount })}`}
           </p>
-          <p className={`${lineTwo} text-white`}>{`${t("from")} ${price}€`}</p>
+          <p
+            className={`${lineTwo} text-white`}
+          >{`${t("bookingForm.from")} ${price}€`}</p>
         </div>
       </a>
     );

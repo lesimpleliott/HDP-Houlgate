@@ -26,14 +26,14 @@ const HeroBanner = ({ className }: { className?: string }) => {
   //       <LogoHDP className="w-16 md:w-12" />
   //       <p>Houlgate</p>
   //     </span>
-  //     <p className="mr-1 inline">{t("home_title")}</p>
+  //     <p className="mr-1 inline">{t("home.title")}</p>
   //     <i className="fa-solid fa-star inline align-super text-xs"></i>
   //     <i className="fa-solid fa-star inline align-super text-xs"></i>
   //   </h1>
   // );
 
   // PARAGRAPHE
-  const textContent = i18nParagraphs("home_paragraph");
+  const textContent = i18nParagraphs("home.paragraph");
 
   // IMAGE
   const imageContent = {
