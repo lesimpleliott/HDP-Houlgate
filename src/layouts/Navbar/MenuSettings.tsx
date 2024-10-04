@@ -8,6 +8,8 @@ const MenuSettings = ({ className }: { className?: string }) => {
   const { t, i18n } = useTranslation();
   const { setMenuIsOpen } = useStoreMenu();
 
+  const otherLanguage = i18n.language === "fr" ? "en" : "fr";
+
   return (
     <div className={`${className}`}>
       <CtaButton
@@ -23,18 +25,18 @@ const MenuSettings = ({ className }: { className?: string }) => {
       </CtaButton>
       <button
         onClick={() => {
-          // setMenuIsOpen(false);
+          setMenuIsOpen(false);
           toggleLanguage();
         }}
         className="flex items-center gap-2"
       >
         <img
-          src={`/flags/${i18n.language}.svg`}
-          alt={t(`language.${i18n.language}`)}
+          src={`/flags/${otherLanguage}.svg`}
+          alt={t(`language.${otherLanguage}`)}
           className="h-9 min-w-9 cursor-pointer rounded-full object-cover shadow-md"
         />
         <p className="min-w-20 text-left md:hidden">
-          {capitalize(t(`language.${i18n.language}`))}
+          {capitalize(t(`language.${otherLanguage}`))}
         </p>
       </button>
     </div>
