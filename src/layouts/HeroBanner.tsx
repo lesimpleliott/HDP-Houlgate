@@ -1,21 +1,10 @@
-import { useEffect, useState } from "react";
+import useTailwindBreakpoint from "../hooks/useTailwindBreakpoint";
 import { i18nParagraphs } from "../utils/i18nParagraphs";
 import BookingForm from "./BookingForm/BookingForm";
 
 const HeroBanner = ({ className }: { className?: string }) => {
-  const [isMobile, setIsMobile] = useState<boolean>(false);
-
-  const handleResize = () => {
-    setIsMobile(window.innerWidth < 768); // Taille du breakpoint tailwind :md
-  };
-
-  useEffect(() => {
-    handleResize();
-    window.addEventListener("resize", handleResize);
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
+  const isDesktop = useTailwindBreakpoint("md");
+  const isMobile = !isDesktop;
 
   // // Element commun à la version mobile et desktop
   // // TITRE PRINCIPAL (H1) Dans le cas de la suppression du logo SVG
@@ -75,7 +64,7 @@ const HeroBanner = ({ className }: { className?: string }) => {
       )}
 
       {/* DESKTOP */}
-      {!isMobile && (
+      {isDesktop && (
         <section
           id="heroBanner-desktop"
           className={`max-w-custom flex w-full items-center justify-center`}
