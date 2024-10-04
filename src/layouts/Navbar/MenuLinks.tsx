@@ -20,10 +20,14 @@ const MenuLinks = ({ className }: { className?: string }) => {
       {menuItems.map((item, index) => (
         <li
           key={index}
-          className="hover:bg-primary-100 md:hover:text-primary-500 md:hover:bg-inherit"
+          className="hover:bg-primary-100 md:hover:bg-inherit md:hover:text-primary-500"
         >
           <NavLink
-            className="block py-2 text-center text-xl md:text-base"
+            className={(nav) =>
+              `block py-2 text-center text-xl font-medium md:text-base ${
+                nav.isActive && "font-medium text-primary-500"
+              }`
+            }
             to={item.link}
             onClick={() => setMenuIsOpen(false)}
           >
