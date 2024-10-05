@@ -12,9 +12,7 @@ const CompactRoomCard = ({
   const { t, i18n } = useTranslation();
 
   return (
-    <article
-      className={`flex flex-col rounded-2xl  border-gray-300 bg-white p-3 shadow-lg ${className}`}
-    >
+    <article className={`card flex flex-col p-3 ${className}`}>
       {/* IMAGE */}
       <img
         src={room.images[0]}
@@ -22,7 +20,7 @@ const CompactRoomCard = ({
       />
 
       {/* <!-- TITRE + DESCRIPTION --> */}
-      <section className="mt-2 px-1 flex flex-1 flex-col">
+      <section className="mt-2 flex flex-1 flex-col px-1">
         <h3 className="text-xl font-bold">{room.title[i18n.language]}</h3>
         {/* <p className="text-sm mb-2 italic text-gray-500">
           {room.description[i18n.language]}
@@ -30,7 +28,7 @@ const CompactRoomCard = ({
       </section>
 
       {/* <!-- DETAILS --> */}
-      <section className="my-2 px-1 flex justify-between">
+      <section className="my-2 flex justify-between px-1">
         <div className="">
           <p className="text-xs font-medium uppercase tracking-wide">
             {t("common.from")}

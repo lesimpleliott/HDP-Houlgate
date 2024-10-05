@@ -13,16 +13,16 @@ const RoomsOverview = ({ className }: { className?: string }) => {
   // Etat permettant de savoir si on affiche tous les chambres ou non
   const [showAllRooms, setShowAllRooms] = useState(false);
   // On récupère la taille de l'écran
-  const isSm = useTailwindBreakpoint("sm");
-  const isLg = useTailwindBreakpoint("lg");
-  // On détermine le nombre de chambres à afficher en fonction de la taille de l'écran
+  const sm = useTailwindBreakpoint("sm");
+  const lg = useTailwindBreakpoint("lg");
+  // Détermine le nombre de chambres à afficher en fonction de la taille de l'écran
   const roomsToShow = showAllRooms
     ? roomsData
-    : isLg
-      ? roomsData.slice(0, 3)
-      : isSm
-        ? roomsData.slice(0, 4)
-        : roomsData.slice(0, 3);
+    : lg
+      ? roomsData.slice(0, 3) // écran supérieur à lg (1024px) : on affiche 3 chambres
+      : sm
+        ? roomsData.slice(0, 4) // écran supérieur à sm (640px) : on affiche 4 chambres
+        : roomsData.slice(0, 3); // écran inférieur à sm (640px) : on affiche 3 chambres
 
   return (
     <SectionHDP className={`${className} flex flex-col gap-4`}>

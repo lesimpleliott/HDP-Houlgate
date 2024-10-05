@@ -48,6 +48,12 @@ strong::after {
   transform: skew(0deg, -2deg);
 }
 
+.card {
+  border-radius: theme("borderRadius.lg");
+  box-shadow: theme("boxShadow.lg");
+  background-color: theme("colors.white");
+}
+
 /* *** *** *** *** *** *** *** ***  */
 /* DEV CLASS */
 .test {
