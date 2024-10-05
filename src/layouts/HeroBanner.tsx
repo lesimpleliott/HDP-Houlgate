@@ -1,3 +1,4 @@
+import LogoHDP from "../components/LogoHDP";
 import useTailwindBreakpoint from "../hooks/useTailwindBreakpoint";
 import { i18nParagraphs } from "../utils/i18nParagraphs";
 import BookingForm from "./BookingForm/BookingForm";
@@ -36,17 +37,17 @@ const HeroBanner = ({ className }: { className?: string }) => {
       {isMobile && (
         <section
           id="heroBanner-mobile"
-          className={`flex flex-col items-center gap-4 pt-40 md:hidden ${className}`}
+          className={`flex flex-col items-center gap-4 pt-28 md:hidden ${className}`}
         >
           {/* Textes */}
           {/* {titleContent} */}
-          <h1 className="w-full">
-            <img
-              src="public/LOGO_HDP_2024_Horizontal_White.svg"
-              alt="Logo de l'Hôtel de la Plage** à Houlgate"
-              className="mx-auto w-full max-w-96 px-8"
+          <h1>
+            <LogoHDP
+              type="horizontal"
+              className="mx-auto w-full max-w-96 fill-white px-8"
             />
           </h1>
+
           <div className="order-3 flex flex-col gap-3 px-4 md:px-20">
             {textContent}
           </div>
@@ -59,7 +60,7 @@ const HeroBanner = ({ className }: { className?: string }) => {
           />
 
           {/* Formulaire de réservation */}
-          <BookingForm className="order-2" />
+          <BookingForm className="order-2 mt-14" />
         </section>
       )}
 
@@ -75,11 +76,10 @@ const HeroBanner = ({ className }: { className?: string }) => {
             {/* Conteneur de texte */}
             <div className="flex w-1/2 flex-col gap-6 px-10 pb-36 pt-10">
               {/* {titleContent} */}
-              <h1 className="w-full">
-                <img
-                  src="public/LOGO_HDP_2024_Horizontal.svg"
-                  alt="Logo de l'Hôtel de la Plage** à Houlgate"
-                  className="mx-auto w-full max-w-52"
+              <h1>
+                <LogoHDP
+                  type="horizontal"
+                  className="mx-auto w-full max-w-52 fill-primary-500"
                 />
               </h1>
               <div className="flex flex-col gap-2">{textContent}</div>

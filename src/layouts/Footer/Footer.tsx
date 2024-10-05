@@ -1,6 +1,7 @@
 import { useTranslation } from "react-i18next";
 import languages from "../../assets/data/languages.json";
 import Contact from "../../components/Contact";
+import LogoHDP from "../../components/LogoHDP";
 import Socials from "../../components/Socials";
 import { capitalize } from "../../utils/capitalize";
 import { toggleLanguage } from "../../utils/i18n";
@@ -15,10 +16,9 @@ const Footer = () => {
       <div className="max-w-custom grid grid-cols-1 py-6 sm:grid-cols-4 lg:grid-cols-8">
         {/* LOGO */}
         <section className="py-4 sm:col-span-2 lg:order-1">
-          <img
-            src="/LOGO_HDP_2024_Horizontal.svg"
-            alt="Logo Hôtel de la plage** à Houlgate"
-            className="mx-auto w-52"
+          <LogoHDP
+            type="horizontal"
+            className="mx-auto w-52 fill-primary-500"
           />
         </section>
 

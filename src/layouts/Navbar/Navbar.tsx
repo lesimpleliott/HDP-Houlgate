@@ -18,7 +18,7 @@ const Navbar = () => {
         {/* LOGO + BURGER BUTTON */}
         <section className="flex items-center justify-between">
           <NavLink to="/" className="w-12" onClick={() => setMenuIsOpen(false)}>
-            <LogoHDP className="fill-primary-500" />
+            <LogoHDP type="icon" className="fill-primary-500" />
           </NavLink>
           <BurgerButton className="md:hidden" />
         </section>
