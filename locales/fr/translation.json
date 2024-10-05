@@ -7,14 +7,18 @@
     "checkin": "Arrivée",
     "checkout": "Départ",
     "occupation": "Voyageurs",
-    "search": "Rechercher",
-    "night_one": "nuit",
-    "night_other": "nuits",
-    "from": "à partir de"
+    "search": "Rechercher"
   },
 
   "common": {
-    "book": "Réserver"
+    "book": "Réserver",
+    "seeAll": "Voir tout",
+    "night_one": "nuit",
+    "night_other": "nuits",
+    "from": "à partir de",
+    "moreInfo": "Plus d'infos",
+    "showMore": "Voir plus",
+    "showLess": "Voir moins"
   },
 
   "facilities": {
@@ -85,5 +89,13 @@
     "rooms": "Chambres",
     "prices": "Tarifs",
     "contact": "Contact"
+  },
+
+  "rooms": {
+    "title": "Chambres",
+    "paragraph": [
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum et facere eaque eveniet voluptate omnis hic cum earum! Minus cumque, earum maiores aliquam rerum sapiente blanditiis, quibusdam dicta dolorum alias neque sed, voluptatibus eaque consequatur natus? Hic veniam natus dicta!",
+      "Lorem ipsum dolor sit amet consectetur adipisicing. Rerum et facere eaque eveniet voluptate omnis hic cum earum! Minus cumque, earum maiores aliquam rerum sapiente blanditiis, quibusdam dicta dolorum alias neque sed, voluptatibus eaque consequatur natus? Hic veniam natus dicta!"
+    ]
   }
 }

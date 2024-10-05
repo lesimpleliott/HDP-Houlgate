@@ -1,0 +1,130 @@
+[
+  {
+    "id": 101,
+    "title": {
+      "fr": "Double vue mer",
+      "en": "Double sea view"
+    },
+    "description": {
+      "fr": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque similique quaerat quod vitae!",
+      "en": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque similique quaerat quod vitae!"
+    },
+    "persons": 2,
+    "pricePerNight": { "min": 50, "max": 100 },
+    "images": [
+      "/photos/rooms/doubleSea/hdp-doubleSea-1.webp",
+      "/photos/rooms/doubleSea/hdp-doubleSea-2.webp",
+      "/photos/rooms/doubleSea/hdp-doubleSea-3.webp",
+      "/photos/rooms/doubleSea/hdp-doubleSea-4.webp",
+      "/photos/rooms/doubleSea/hdp-doubleSea-5.webp",
+      "/photos/rooms/doubleSea/hdp-doubleSea-6.webp",
+      "/photos/rooms/doubleSea/hdp-doubleSea-7.webp",
+      "/photos/rooms/doubleSea/hdp-doubleSea-8.webp"
+    ]
+  },
+  {
+    "id": 102,
+    "title": {
+      "fr": "Double patio",
+      "en": "Double patio"
+    },
+    "description": {
+      "fr": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque similique quaerat quod vitae!",
+      "en": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque similique quaerat quod vitae!"
+    },
+    "persons": 2,
+    "pricePerNight": { "min": 45, "max": 90 },
+    "images": [
+      "/photos/rooms/doublePatio/hdp-doublePatio-1.webp",
+      "/photos/rooms/doublePatio/hdp-doublePatio-2.webp",
+      "/photos/rooms/doublePatio/hdp-doublePatio-3.webp",
+      "/photos/rooms/doublePatio/hdp-doublePatio-4.webp",
+      "/photos/rooms/doublePatio/hdp-doublePatio-5.webp",
+      "/photos/rooms/doublePatio/hdp-doublePatio-6.webp",
+      "/photos/rooms/doublePatio/hdp-doublePatio-7.webp"
+    ]
+  },
+  {
+    "id": 103,
+    "title": {
+      "fr": "Familiale vue mer",
+      "en": "Family sea view"
+    },
+    "description": {
+      "fr": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque similique quaerat quod vitae!",
+      "en": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque similique quaerat quod vitae!"
+    },
+    "persons": 4,
+    "pricePerNight": { "min": 80, "max": 150 },
+    "images": [
+      "/photos/rooms/familySea/hdp-familySea-2.webp",
+      "/photos/rooms/familySea/hdp-familySea-1.webp",
+      "/photos/rooms/familySea/hdp-familySea-3.webp",
+      "/photos/rooms/familySea/hdp-familySea-4.webp",
+      "/photos/rooms/familySea/hdp-familySea-5.webp",
+      "/photos/rooms/familySea/hdp-familySea-6.webp"
+    ]
+  },
+  {
+    "id": 104,
+    "title": {
+      "fr": "Familiale patio",
+      "en": "Family patio"
+    },
+    "description": {
+      "fr": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque similique quaerat quod vitae!",
+      "en": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque similique quaerat quod vitae!"
+    },
+    "persons": 4,
+    "pricePerNight": { "min": 75, "max": 140 },
+    "images": [
+      "/photos/rooms/familyPatio/hdp-familyPatio-2.webp",
+      "/photos/rooms/familyPatio/hdp-familyPatio-1.webp",
+      "/photos/rooms/familyPatio/hdp-familyPatio-3.webp",
+      "/photos/rooms/familyPatio/hdp-familyPatio-4.webp",
+      "/photos/rooms/familyPatio/hdp-familyPatio-5.webp",
+      "/photos/rooms/familyPatio/hdp-familyPatio-6.webp",
+      "/photos/rooms/familyPatio/hdp-familyPatio-7.webp"
+    ]
+  },
+  {
+    "id": 105,
+    "title": {
+      "fr": "Triple vue mer",
+      "en": "Triple sea view"
+    },
+    "description": {
+      "fr": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque similique quaerat quod vitae!",
+      "en": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque similique quaerat quod vitae!"
+    },
+    "persons": 3,
+    "pricePerNight": { "min": 70, "max": 130 },
+    "images": [
+      "/photos/rooms/tripleSea/hdp-tripleSea-3.webp",
+      "/photos/rooms/tripleSea/hdp-tripleSea-1.webp",
+      "/photos/rooms/tripleSea/hdp-tripleSea-2.webp",
+      "/photos/rooms/tripleSea/hdp-tripleSea-4.webp",
+      "/photos/rooms/tripleSea/hdp-tripleSea-5.webp",
+      "/photos/rooms/tripleSea/hdp-tripleSea-6.webp"
+    ]
+  },
+  {
+    "id": 106,
+    "title": {
+      "fr": "Standard",
+      "en": "Standard"
+    },
+    "description": {
+      "fr": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque similique quaerat quod vitae!",
+      "en": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque similique quaerat quod vitae!"
+    },
+    "persons": 2,
+    "pricePerNight": { "min": 40, "max": 80 },
+    "images": [
+      "/photos/rooms/standard/hdp-standard-4.webp",
+      "/photos/rooms/standard/hdp-standard-1.webp",
+      "/photos/rooms/standard/hdp-standard-2.webp",
+      "/photos/rooms/standard/hdp-standard-3.webp"
+    ]
+  }
+]
