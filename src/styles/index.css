@@ -14,19 +14,11 @@ body {
   justify-content: flex-end;
 }
 main {
+  flex: 1;
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: theme("spacing.10");
-  margin-block: theme("spacing.16");
-}
-
-.max-w-custom {
-  width: theme("width.full");
-  max-width: theme("maxWidth.7xl");
-  padding-inline: theme("spacing.4");
-  @screen md {
-    padding-inline: theme("spacing.10");
-  }
 }
 
 strong {
@@ -46,6 +38,18 @@ strong::after {
   width: theme("width.full");
   background-color: theme("colors.primary.200");
   transform: skew(0deg, -2deg);
+}
+
+/* *** *** *** *** *** *** *** ***  */
+/* CUSTOM CLASS */
+
+.max-w-custom {
+  width: theme("width.full");
+  max-width: theme("maxWidth.7xl");
+  padding-inline: theme("spacing.4");
+  @screen md {
+    padding-inline: theme("spacing.10");
+  }
 }
 
 .card {

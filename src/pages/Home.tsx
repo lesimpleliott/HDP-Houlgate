@@ -5,7 +5,7 @@ import RoomsCompact from "../layouts/Rooms/RoomsOverview";
 
 const Home = () => {
   return (
-    <main className="flex flex-col items-center">
+    <main className="my-16">
       <HeroBanner className="md:mt-4" />
       <Facilities />
       <RoomsCompact />

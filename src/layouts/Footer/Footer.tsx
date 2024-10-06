@@ -13,7 +13,7 @@ const Footer = () => {
 
   return (
     <footer className="bg-gray-100 text-sm">
-      <div className="max-w-custom grid grid-cols-1 py-6 sm:grid-cols-4 lg:grid-cols-8">
+      <div className="max-w-custom mx-auto grid grid-cols-1 py-6 sm:grid-cols-4 lg:grid-cols-8">
         {/* LOGO */}
         <section className="py-4 sm:col-span-2 lg:order-1">
           <LogoHDP
