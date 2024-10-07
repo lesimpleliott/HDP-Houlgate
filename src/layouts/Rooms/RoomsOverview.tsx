@@ -5,7 +5,8 @@ import CtaButton from "../../components/CtaButton";
 import SectionHDP from "../../components/SectionHDP/SectionHDP";
 import SectionTitle from "../../components/SectionHDP/SectionTitle";
 import useTailwindBreakpoint from "../../hooks/useTailwindBreakpoint";
-import CompactRoomCard from "./CompactRoomCard";
+import { RoomTypes } from "../../types/RoomTypes";
+import CompactRoomCard from "./RoomsOverviewCard";
 
 const RoomsOverview = ({ className }: { className?: string }) => {
   const { t } = useTranslation();
@@ -16,13 +17,18 @@ const RoomsOverview = ({ className }: { className?: string }) => {
   const sm = useTailwindBreakpoint("sm");
   const lg = useTailwindBreakpoint("lg");
   // Détermine le nombre de chambres à afficher en fonction de la taille de l'écran
-  const roomsToShow = showAllRooms
-    ? roomsData
-    : lg
-      ? roomsData.slice(0, 3) // écran supérieur à lg (1024px) : on affiche 3 chambres
-      : sm
-        ? roomsData.slice(0, 4) // écran supérieur à sm (640px) : on affiche 4 chambres
-        : roomsData.slice(0, 3); // écran inférieur à sm (640px) : on affiche 3 chambres
+  const roomsToShow: RoomTypes[] = (
+    showAllRooms
+      ? roomsData
+      : lg
+        ? // écran supérieur à lg (1024px) : on affiche 3 cards
+          roomsData.slice(0, 3)
+        : sm
+          ? // écran supérieur à sm (640px) : on affiche 4 cards
+            roomsData.slice(0, 4)
+          : // écran inférieur à sm (640px) : on affiche 3 cards
+            roomsData.slice(0, 3)
+  ) as RoomTypes[];
 
   return (
     <SectionHDP className={`${className} flex flex-col gap-4`}>

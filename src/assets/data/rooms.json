@@ -9,8 +9,6 @@
       "fr": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque similique quaerat quod vitae!",
       "en": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque similique quaerat quod vitae!"
     },
-    "persons": 2,
-    "pricePerNight": { "min": 50, "max": 100 },
     "images": [
       "/photos/rooms/doubleSea/hdp-doubleSea-1.webp",
       "/photos/rooms/doubleSea/hdp-doubleSea-2.webp",
@@ -20,7 +18,27 @@
       "/photos/rooms/doubleSea/hdp-doubleSea-6.webp",
       "/photos/rooms/doubleSea/hdp-doubleSea-7.webp",
       "/photos/rooms/doubleSea/hdp-doubleSea-8.webp"
-    ]
+    ],
+    "infos": {
+      "roomType": "seaview",
+      "persons": 2,
+      "price": {
+        "min": 90,
+        "max": 115
+      },
+      "area": {
+        "min": 15,
+        "max": 17
+      },
+      "bed": {
+        "fr": "Lit Queen size",
+        "en": "Queen size bed"
+      },
+      "tv": true,
+      "wifi": true,
+      "fridge": true,
+      "handicap": false
+    }
   },
   {
     "id": 102,
@@ -32,8 +50,6 @@
       "fr": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque similique quaerat quod vitae!",
       "en": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque similique quaerat quod vitae!"
     },
-    "persons": 2,
-    "pricePerNight": { "min": 45, "max": 90 },
     "images": [
       "/photos/rooms/doublePatio/hdp-doublePatio-1.webp",
       "/photos/rooms/doublePatio/hdp-doublePatio-2.webp",
@@ -42,7 +58,27 @@
       "/photos/rooms/doublePatio/hdp-doublePatio-5.webp",
       "/photos/rooms/doublePatio/hdp-doublePatio-6.webp",
       "/photos/rooms/doublePatio/hdp-doublePatio-7.webp"
-    ]
+    ],
+    "infos": {
+      "roomType": "patio",
+      "persons": 2,
+      "price": {
+        "min": 80,
+        "max": 105
+      },
+      "area": {
+        "min": 15,
+        "max": 17
+      },
+      "bed": {
+        "fr": "Lit King size, Queen size ou double",
+        "en": "King size, Queen size or double bed"
+      },
+      "tv": true,
+      "wifi": true,
+      "fridge": true,
+      "handicap": false
+    }
   },
   {
     "id": 103,
@@ -54,8 +90,6 @@
       "fr": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque similique quaerat quod vitae!",
       "en": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque similique quaerat quod vitae!"
     },
-    "persons": 4,
-    "pricePerNight": { "min": 80, "max": 150 },
     "images": [
       "/photos/rooms/familySea/hdp-familySea-2.webp",
       "/photos/rooms/familySea/hdp-familySea-1.webp",
@@ -63,7 +97,24 @@
       "/photos/rooms/familySea/hdp-familySea-4.webp",
       "/photos/rooms/familySea/hdp-familySea-5.webp",
       "/photos/rooms/familySea/hdp-familySea-6.webp"
-    ]
+    ],
+    "infos": {
+      "roomType": "seaview",
+      "persons": 4,
+      "price": {
+        "min": 125,
+        "max": 169
+      },
+      "area": 26,
+      "bed": {
+        "fr": "Lit double & 2 lits simples",
+        "en": "Double & 2 singles beds"
+      },
+      "tv": true,
+      "wifi": true,
+      "fridge": true,
+      "handicap": false
+    }
   },
   {
     "id": 104,
@@ -75,8 +126,6 @@
       "fr": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque similique quaerat quod vitae!",
       "en": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque similique quaerat quod vitae!"
     },
-    "persons": 4,
-    "pricePerNight": { "min": 75, "max": 140 },
     "images": [
       "/photos/rooms/familyPatio/hdp-familyPatio-2.webp",
       "/photos/rooms/familyPatio/hdp-familyPatio-1.webp",
@@ -85,7 +134,24 @@
       "/photos/rooms/familyPatio/hdp-familyPatio-5.webp",
       "/photos/rooms/familyPatio/hdp-familyPatio-6.webp",
       "/photos/rooms/familyPatio/hdp-familyPatio-7.webp"
-    ]
+    ],
+    "infos": {
+      "roomType": "patio",
+      "persons": 4,
+      "price": {
+        "min": 125,
+        "max": 169
+      },
+      "area": 33,
+      "bed": {
+        "fr": "Lit Queen size & lits simples",
+        "en": "Queen size & 2 single beds"
+      },
+      "tv": true,
+      "wifi": true,
+      "fridge": true,
+      "handicap": false
+    }
   },
   {
     "id": 105,
@@ -97,8 +163,6 @@
       "fr": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque similique quaerat quod vitae!",
       "en": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque similique quaerat quod vitae!"
     },
-    "persons": 3,
-    "pricePerNight": { "min": 70, "max": 130 },
     "images": [
       "/photos/rooms/tripleSea/hdp-tripleSea-3.webp",
       "/photos/rooms/tripleSea/hdp-tripleSea-1.webp",
@@ -106,7 +170,24 @@
       "/photos/rooms/tripleSea/hdp-tripleSea-4.webp",
       "/photos/rooms/tripleSea/hdp-tripleSea-5.webp",
       "/photos/rooms/tripleSea/hdp-tripleSea-6.webp"
-    ]
+    ],
+    "infos": {
+      "roomType": "seaview",
+      "persons": 3,
+      "price": {
+        "min": 100,
+        "max": 139
+      },
+      "area": { "approx": 20 },
+      "bed": {
+        "fr": "Lit double & Lit simple",
+        "en": "Double & single beds"
+      },
+      "tv": true,
+      "wifi": true,
+      "fridge": true,
+      "handicap": false
+    }
   },
   {
     "id": 106,
@@ -118,13 +199,28 @@
       "fr": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque similique quaerat quod vitae!",
       "en": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque similique quaerat quod vitae!"
     },
-    "persons": 2,
-    "pricePerNight": { "min": 40, "max": 80 },
     "images": [
       "/photos/rooms/standard/hdp-standard-4.webp",
       "/photos/rooms/standard/hdp-standard-1.webp",
       "/photos/rooms/standard/hdp-standard-2.webp",
       "/photos/rooms/standard/hdp-standard-3.webp"
-    ]
+    ],
+    "infos": {
+      "roomType": "standard",
+      "persons": 2,
+      "price": {
+        "min": 75,
+        "max": 95
+      },
+      "area": 13,
+      "bed": {
+        "fr": "Lit double",
+        "en": "Double bed"
+      },
+      "tv": true,
+      "wifi": true,
+      "fridge": false,
+      "handicap": true
+    }
   }
 ]

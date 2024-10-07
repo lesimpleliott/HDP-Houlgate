@@ -2,7 +2,7 @@ import { useTranslation } from "react-i18next";
 import { NavLink } from "react-router-dom";
 import { RoomTypes } from "../../types/RoomTypes";
 
-const CompactRoomCard = ({
+const RoomsOverviewCard = ({
   room,
   className,
 }: {
@@ -35,7 +35,7 @@ const CompactRoomCard = ({
             {i18n.language === "fr" ? " :" : ":"}
           </p>
           <p className="text-3xl font-extrabold">
-            {room.pricePerNight.min}€
+            {room.infos.price.min}€
             <span className="text-base font-medium">
               {" /"}
               {t("common.night_one")}
@@ -46,7 +46,7 @@ const CompactRoomCard = ({
           <img src="/icons/users.svg" className="w-8 pb-0.5" alt="" />
           <p className="text-lg font-medium">
             <span className="text-xs">x</span>
-            {room.persons}
+            {room.infos.persons}
           </p>
         </div>
       </section>
@@ -62,4 +62,4 @@ const CompactRoomCard = ({
   );
 };
 
-export default CompactRoomCard;
+export default RoomsOverviewCard;
