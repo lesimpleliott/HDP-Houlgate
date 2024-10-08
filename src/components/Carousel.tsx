@@ -44,7 +44,7 @@ const Carousel = ({ images, className }: CarouselProps) => {
         <button
           key={index}
           onClick={action}
-          className={`absolute top-1/2 ${button === "left" ? "left-0" : "right-0"} h-full w-1/6 -translate-y-1/2 text-white/50 hover:text-white md:w-10`}
+          className={`absolute top-1/2 ${button === "left" ? "left-0" : "right-0"} h-full w-1/6 max-w-20 -translate-y-1/2 text-white/50 hover:text-white md:w-10`}
         >
           <i className={`fa-solid fa-chevron-${button} text-2xl`}></i>
         </button>

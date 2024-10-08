@@ -12,7 +12,7 @@ const Rooms = () => {
   const test = useTailwindBreakpoint("sm");
 
   return (
-    <main className="my-16 items-stretch">
+    <main className="my-16 items-center">
       {/* BANNER */}
       <section className="relative w-full overflow-hidden">
         <img
@@ -30,7 +30,7 @@ const Rooms = () => {
       </section>
 
       {/* ROOMS */}
-      <section className="">
+      <section className="w-full max-w-7xl">
         {rooms.map((room, index) => (
           <RoomsFullView key={index} index={index} room={room} />
         ))}

@@ -1,12 +1,13 @@
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
+import { NavLink } from "react-router-dom";
 import roomsData from "../../assets/data/rooms.json";
 import CtaButton from "../../components/CtaButton";
 import SectionHDP from "../../components/SectionHDP/SectionHDP";
 import SectionTitle from "../../components/SectionHDP/SectionTitle";
 import useTailwindBreakpoint from "../../hooks/useTailwindBreakpoint";
 import { RoomTypes } from "../../types/RoomTypes";
-import CompactRoomCard from "./RoomsOverviewCard";
+import RoomHeader from "./RoomHeader";
 
 const RoomsOverview = ({ className }: { className?: string }) => {
   const { t } = useTranslation();
@@ -32,6 +33,7 @@ const RoomsOverview = ({ className }: { className?: string }) => {
 
   return (
     <SectionHDP className={`${className} flex flex-col gap-4`}>
+      {/* TITRE + CTA */}
       <section className="flex justify-between">
         <SectionTitle title={t("rooms.title")} />
         <CtaButton type="Navlink" to="/rooms">
@@ -39,12 +41,31 @@ const RoomsOverview = ({ className }: { className?: string }) => {
         </CtaButton>
       </section>
 
+      {/* CARDS */}
       <section className="grid grid-rows-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
         {roomsToShow.map((room) => (
-          <CompactRoomCard key={room.id} room={room} />
+          <article className="card flex flex-col p-3.5 ">
+            {/* IMAGE */}
+            <img
+              src={room.images[0]}
+              className="max-h-52 w-full rounded-t-lg object-cover"
+            />
+
+            {/* TITLE + INFOS */}
+            <RoomHeader room={room} />
+
+            {/* <!-- BOUTON --> */}
+            <NavLink
+              to={`/rooms#${room.id}`}
+              className="mt-2.5 rounded-md bg-gray-800 p-2 text-center text-sm font-semibold text-white hover:bg-gray-900"
+            >
+              {t("common.moreInfo")}
+            </NavLink>
+          </article>
         ))}
       </section>
 
+      {/* BOUTON 'VOIR PLUS' */}
       <button
         onClick={() => setShowAllRooms(!showAllRooms)}
         className="italic text-gray-400"
