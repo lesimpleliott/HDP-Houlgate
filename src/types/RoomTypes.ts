@@ -12,6 +12,7 @@ export type RoomInfosTypes = {
 
 export type RoomTypes = {
   id: number;
+  reservitID: number | number[];
   title: { [lang: string]: string };
   description: { [lang: string]: string };
   images: string[];

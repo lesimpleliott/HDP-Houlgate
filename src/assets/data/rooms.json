@@ -1,6 +1,7 @@
 [
   {
     "id": 101,
+    "reservitID": [481308, 1113035],
     "title": {
       "fr": "Double vue mer",
       "en": "Double sea view"
@@ -42,6 +43,7 @@
   },
   {
     "id": 102,
+    "reservitID": [481307, 1113036],
     "title": {
       "fr": "Double patio",
       "en": "Double patio"
@@ -82,6 +84,7 @@
   },
   {
     "id": 103,
+    "reservitID": 481311,
     "title": {
       "fr": "Familiale vue mer",
       "en": "Family sea view"
@@ -118,6 +121,7 @@
   },
   {
     "id": 104,
+    "reservitID": 481312,
     "title": {
       "fr": "Familiale patio",
       "en": "Family patio"
@@ -155,6 +159,7 @@
   },
   {
     "id": 105,
+    "reservitID": 481310,
     "title": {
       "fr": "Triple vue mer",
       "en": "Triple sea view"
@@ -191,6 +196,7 @@
   },
   {
     "id": 106,
+    "reservitID": 759148,
     "title": {
       "fr": "Standard",
       "en": "Standard"
