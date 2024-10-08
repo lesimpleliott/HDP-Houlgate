@@ -12,9 +12,11 @@
  * 3- Props spécifiques au type "link".
  * @param {string} props.href - L'URL à utiliser pour le lien.
  * @param {string} props.target (option) - La cible du lien (par exemple, "_blank" pour ouvrir dans un nouvel onglet).
+ * @param {Function} props.onClick (option)- Eventuelle fonction à appeler lors du clic sur le bouton.
  *
  * 4- Props spécifiques au type "Navlink".
  * @param {string} props.to - La destination du lien (par exemple, "/home").
+ * @param {Function} props.onClick (option)- Eventuelle fonction à appeler lors du clic sur le bouton.
  *
  * 5- Props spécifiques au type "button".
  * @param {Function} props.onClick - La fonction à appeler lors du clic sur le bouton.

@@ -11,7 +11,7 @@ type CtaLink = CtaButtonBase & {
   href: string;
   target?: string;
   to?: never;
-  onClick?: never;
+  onClick?: () => void;
 };
 
 // Propriétés "Navlink"
@@ -19,7 +19,7 @@ type CtaNavlink = CtaButtonBase & {
   href?: never;
   target?: never;
   to: string;
-  onClick?: never;
+  onClick?: () => void;
 };
 
 // Propriétés "button"
