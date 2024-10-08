@@ -94,9 +94,17 @@
   "rooms": {
     "title": "Chambres",
     "paragraph": [
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum et facere eaque eveniet voluptate omnis hic cum earum! Minus cumque, earum maiores aliquam rerum sapiente blanditiis, quibusdam dicta dolorum alias neque sed, voluptatibus eaque consequatur natus? Hic veniam natus dicta!",
-      "Lorem ipsum dolor sit amet consectetur adipisicing. Rerum et facere eaque eveniet voluptate omnis hic cum earum! Minus cumque, earum maiores aliquam rerum sapiente blanditiis, quibusdam dicta dolorum alias neque sed, voluptatibus eaque consequatur natus? Hic veniam natus dicta!"
+      "<strong>L'hôtel de la Plage**</strong> vous propose neuf chambres de catégorie double, triple ou familiale. Certaines offrent une <strong>vue</strong> sur les villas houlgataises et la <strong>mer</strong>, d’autres se situent sur le <strong>patio</strong>, coursive interne à l’hôtel.",
+      "La chambre adaptée aux <strong>personnes à mobilité réduite</strong> (PMR) se trouve au rez-de-chaussée, les autres au 1er ou 2ème étage (sans ascenseur)."
     ],
+    "filters": {
+      "all": "All",
+      "double": "Double",
+      "triple": "Triple",
+      "family": "Family",
+      "patio": "Patio",
+      "sea": "Vue mer"
+    },
     "bookThisRoom": "Réserver cette chambre",
     "seaview": "Vue sur mer",
     "tv": "Télévision à écran plat",
