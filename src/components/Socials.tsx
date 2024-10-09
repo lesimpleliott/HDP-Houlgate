@@ -1,26 +1,24 @@
-import socials from "../assets/data/socials.json";
-type SocialDataType = {
-  link: string;
-  icon: string;
-  alt: string;
-};
+import data from "../assets/data/contactAndSocials.json";
+import { SocialItemType } from "../types/ContactSocialsDataType";
 
 type SocialsProps = {
   className?: string;
-  iconSize?: string;
+  iconClass: string;
 };
 
-const Socials = ({ className, iconSize }: SocialsProps) => {
+const Socials = ({ className, iconClass }: SocialsProps) => {
+  const socials: SocialItemType[] = data.socials;
+
   return (
     <section className={`flex gap-4 ${className}`}>
-      {socials.map((social: SocialDataType, index: number) => (
+      {socials.map((social, index) => (
         <a
           key={index}
           href={social.link}
           target="_blank"
           rel="noreferrer noopener"
         >
-          <img src={social.icon} alt={social.alt} className={`${iconSize}`} />
+          <img src={social.icon} alt={social.alt} className={`${iconClass}`} />
         </a>
       ))}
     </section>

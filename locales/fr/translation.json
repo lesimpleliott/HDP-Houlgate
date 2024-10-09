@@ -21,6 +21,13 @@
     "showLess": "Voir moins"
   },
 
+  "contact": {
+    "title": "Contactez-nous",
+    "paragraph": [
+      "Pour toute demande de renseignements ou réservation, n’hésitez pas à nous contacter par téléphone ou par mail. Vous pouvez également nous rendre visite à l’hôtel, situé à deux pas de la plage d’Houlgate."
+    ]
+  },
+
   "facilities": {
     "title": "Services",
     "paragraph": [

@@ -1,6 +1,6 @@
 import { useTranslation } from "react-i18next";
 import languages from "../../assets/data/languages.json";
-import Contact from "../../components/Contact";
+import ContactList from "../../components/ContactList";
 import LogoHDP from "../../components/LogoHDP";
 import Socials from "../../components/Socials";
 import { capitalize } from "../../utils/capitalize";
@@ -25,8 +25,12 @@ const Footer = () => {
         {/* CONTACT & SOCIALS */}
         <section className="flex flex-col items-center py-4 sm:col-span-2 lg:col-span-2">
           <div className="flex flex-col items-center gap-4">
-            <Contact className="text-center text-primary-500" />
-            <Socials iconSize="w-10 sm:w-8" />
+            <ContactList
+              icon={false}
+              className="space-y-2 text-center leading-4 text-primary-500"
+              textClass="w-full"
+            />
+            <Socials iconClass="w-10 sm:w-8" />
           </div>
         </section>
 
