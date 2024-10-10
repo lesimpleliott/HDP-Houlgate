@@ -43,8 +43,8 @@ const RoomsOverview = ({ className }: { className?: string }) => {
 
       {/* CARDS */}
       <section className="grid grid-rows-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
-        {roomsToShow.map((room) => (
-          <article className="card flex flex-col p-3.5 ">
+        {roomsToShow.map((room, index) => (
+          <article key={index} className="card flex flex-col p-3.5 ">
             {/* IMAGE */}
             <img
               src={room.images[0]}
