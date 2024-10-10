@@ -2,13 +2,14 @@ import { useTranslation } from "react-i18next";
 import ContactList from "../components/ContactList";
 import SectionHDP from "../components/SectionHDP/SectionHDP";
 import SectionTitle from "../components/SectionHDP/SectionTitle";
+import Access from "../layouts/Access";
 import { i18nParagraphs } from "../utils/i18nParagraphs";
 
 const Contact = () => {
   const { t } = useTranslation();
 
   return (
-    <main className="mt-16">
+    <main className="mt-16 flex flex-col gap-10">
       <SectionHDP className="grid grid-cols-1 gap-6 md:grid-cols-2">
         {/* CONTACT */}
         <section className="flex flex-col gap-6">
@@ -32,6 +33,9 @@ const Contact = () => {
           ></iframe>
         </section>
       </SectionHDP>
+
+      {/* ACCES */}
+      <Access />
     </main>
   );
 };
