@@ -28,8 +28,39 @@
   "contact": {
     "title": "Contact us",
     "paragraph": [
-      "For any information or reservation request, do not hesitate to contact us by phone or email. You can also visit us at the hotel, located a stone's throw from the beach in Houlgate."
-    ]
+      "For any information or reservation request, do not hesitate to contact us by phone or email.",
+      "You can also visit us at the hotel, located a stone's throw from the beach in Houlgate."
+    ],
+    "form": {
+      "name": {
+        "label": "Name, First name",
+        "placeholder": "3 characters minimum",
+        "errorMessage": "Must contain at least 3 characters"
+      },
+      "email": {
+        "label": "Email",
+        "placeholder": "Your email",
+        "errorMessage": "Invalid email format"
+      },
+      "subject": {
+        "label": "Subject",
+        "placeholder": "5 characters minimum",
+        "errorMessage": "Must contain at least 5 characters"
+      },
+      "message": {
+        "label": "Message",
+        "placeholder": "Your message...",
+        "errorMessage": "Must contain at least 5 characters"
+      },
+      "submit": {
+        "send": "Send",
+        "invalid_one": "Invalid field",
+        "invalid_other": "Invalid fields",
+        "sending": "Sending...",
+        "success": "Message sent",
+        "error": "Error"
+      }
+    }
   },
 
   "facilities": {

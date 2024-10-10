@@ -18,10 +18,22 @@ export default {
         accent: "#E04A54",
         background: "#FBFBFB",
         textColor: "#444444",
+        error: "#ef4444",
+        success: "#22c55e",
       },
       fontFamily: {
         main: ["Roboto, sans-serif"],
         title: ["EB Garamond, serif"],
+      },
+      keyframes: {
+        shake: {
+          "0%, 100%": { transform: "translateX(0)" },
+          "20%, 60%": { transform: "translateX(-10px)" },
+          "40%, 80%": { transform: "translateX(10px)" },
+        },
+      },
+      animation: {
+        shake: "shake 300ms ease-in-out",
       },
     },
   },

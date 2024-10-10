@@ -28,8 +28,39 @@
   "contact": {
     "title": "Contactez-nous",
     "paragraph": [
-      "Pour toute demande de renseignements ou réservation, n’hésitez pas à nous contacter par téléphone ou par mail. Vous pouvez également nous rendre visite à l’hôtel, situé à deux pas de la plage d’Houlgate."
-    ]
+      "Pour toute demande de renseignements ou réservation, n’hésitez pas à nous contacter par téléphone ou par mail.",
+      "Vous pouvez également nous rendre visite à l’hôtel, situé à deux pas de la plage d’Houlgate."
+    ],
+    "form": {
+      "name": {
+        "label": "Nom, Prénom",
+        "placeholder": "3 caractères minimum",
+        "errorMessage": "Doit contenir au moins 3 caractères"
+      },
+      "email": {
+        "label": "Email",
+        "placeholder": "Votre email",
+        "errorMessage": "Format email invalide"
+      },
+      "subject": {
+        "label": "Sujet",
+        "placeholder": "5 caractères minimum",
+        "errorMessage": "Doit contenir au moins 5 caractères"
+      },
+      "message": {
+        "label": "Message",
+        "placeholder": "Votre message...",
+        "errorMessage": "Doit contenir au moins 5 caractères"
+      },
+      "submit": {
+        "send": "Envoyer",
+        "invalid_one": "Champ invalide",
+        "invalid_other": "Champs invalides",
+        "sending": "Envoi en cours...",
+        "success": "Message envoyé",
+        "error": "Erreur"
+      }
+    }
   },
 
   "facilities": {
