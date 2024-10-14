@@ -7,8 +7,8 @@
       "en": "Double sea view"
     },
     "description": {
-      "fr": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque similique quaerat quod vitae!",
-      "en": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque similique quaerat quod vitae!"
+      "fr": "Découvrez notre chambre confortable avec vue sur la mer, idéale pour un séjour agréable. Elle peut accueillir jusqu'à 2 personnes maximum. Simplicité et confort à un prix abordable, pour un séjour reposant en bord de mer. ",
+      "en": "Discover our comfortable room with sea view, ideal for a pleasant stay. It can accommodate up to 2 people maximum. Simplicity and comfort at an affordable price, for a relaxing stay by the sea."
     },
     "images": [
       "/photos/rooms/doubleSea/hdp-doubleSea-1.webp",
@@ -24,12 +24,12 @@
       "roomType": "seaview",
       "persons": 2,
       "price": {
-        "min": 90,
-        "max": 115
+        "min": 79,
+        "max": 135
       },
       "area": {
-        "min": 15,
-        "max": 17
+        "min": 14,
+        "max": 18
       },
       "bed": {
         "fr": "Lit Queen size",
@@ -49,8 +49,8 @@
       "en": "Double patio"
     },
     "description": {
-      "fr": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque similique quaerat quod vitae!",
-      "en": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque similique quaerat quod vitae!"
+      "fr": "Notre chambre confortable et lumineuse vous donne accès à un charmant patio commmun, idéale pour se détendre en plein air. Chambre pouvant accueillir jusqu'à 2 personnes maximum.",
+      "en": "Our comfortable and bright room gives you access to a charming shared patio, ideal for relaxing outdoors. Room can accommodate up to 2 people maximum."
     },
     "images": [
       "/photos/rooms/doublePatio/hdp-doublePatio-1.webp",
@@ -65,12 +65,12 @@
       "roomType": "patio",
       "persons": 2,
       "price": {
-        "min": 80,
-        "max": 105
+        "min": 69,
+        "max": 119
       },
       "area": {
-        "min": 15,
-        "max": 17
+        "min": 12,
+        "max": 19
       },
       "bed": {
         "fr": "Lit King size, Queen size ou double",
@@ -90,8 +90,8 @@
       "en": "Family sea view"
     },
     "description": {
-      "fr": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque similique quaerat quod vitae!",
-      "en": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque similique quaerat quod vitae!"
+      "fr": "Notre chambre familiale avec vue sur la mer est idéale pour les séjours en famille ou entre amis. Spacieuse et lumineuse, elle dispose de plusieurs lits confortable pouvant accueillir jusqu’à 4 personnes (une personnes en plus est autorisé, sur demande de lit d'appoint).",
+      "en": "Our family room with sea view is ideal for stays with family or friends. Spacious and bright, it has several comfortable beds that can accommodate up to 4 people (one more person is allowed, on request for an extra bed)."
     },
     "images": [
       "/photos/rooms/familySea/hdp-familySea-2.webp",
@@ -105,8 +105,8 @@
       "roomType": "seaview",
       "persons": 4,
       "price": {
-        "min": 125,
-        "max": 169
+        "min": 109,
+        "max": 189
       },
       "area": 26,
       "bed": {
@@ -127,8 +127,8 @@
       "en": "Family patio"
     },
     "description": {
-      "fr": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque similique quaerat quod vitae!",
-      "en": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque similique quaerat quod vitae!"
+      "fr": "Notre chambre familiale, spacieuse et conviviale, vous donne accès à un patio commun idéal pour se détendre en plein air. Elle est équipée de plusieurs lits confortables pouvant accueillir 4 personnes  (une personnes en plus est autorisé, sur demande de lit d'appoint). Parfaite pour les familles elle offre tout le necessaie pour un séjour agréable.",
+      "en": "Our spacious and friendly family room gives you access to a shared patio ideal for relaxing outdoors. It is equipped with several comfortable beds that can accommodate 4 people (one more person is allowed, on request for an extra bed). Perfect for families, it offers everything you need for a pleasant stay."
     },
     "images": [
       "/photos/rooms/familyPatio/hdp-familyPatio-2.webp",
@@ -143,8 +143,8 @@
       "roomType": "patio",
       "persons": 4,
       "price": {
-        "min": 125,
-        "max": 169
+        "min": 109,
+        "max": 189
       },
       "area": 33,
       "bed": {
@@ -165,8 +165,8 @@
       "en": "Triple sea view"
     },
     "description": {
-      "fr": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque similique quaerat quod vitae!",
-      "en": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque similique quaerat quod vitae!"
+      "fr": "Notre chambre triple avec vue mer est idéale pour les petits groupes ou familles. Elle dispose de trois lits confortables. La grande fenêtre offre une vue direct sur l'océan, apportant une ambiance relaxante à votre séjour.",
+      "en": "Our triple room with sea view is ideal for small groups or families. It has three comfortable beds. The large window offers a direct view of the ocean, bringing a relaxing atmosphere to your stay."
     },
     "images": [
       "/photos/rooms/tripleSea/hdp-tripleSea-3.webp",
@@ -180,10 +180,10 @@
       "roomType": "seaview",
       "persons": 3,
       "price": {
-        "min": 100,
-        "max": 139
+        "min": 99,
+        "max": 155
       },
-      "area": { "approx": 20 },
+      "area": { "approx": 19 },
       "bed": {
         "fr": "Lit double & Lit simple",
         "en": "Double & single beds"
@@ -202,8 +202,8 @@
       "en": "Standard"
     },
     "description": {
-      "fr": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque similique quaerat quod vitae!",
-      "en": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque similique quaerat quod vitae!"
+      "fr": "Notre chambre standard adaptée aux personnes à mobilité réduite est spacieuse et accessible, avec des aménagements spécialement conçus pour faciliter vos déplacements. Elle dispose d'un lit confortable pouvant accueillir 2 personnes, d'une salle de bain privative équipée de barres d'appui et d'une douche accessible. Tout est pensé pour offir un séjour agréable et pratique dans notre hôtel. ",
+      "en": "Our standard room adapted for people with reduced mobility is spacious and accessible, with facilities specially designed to facilitate your movements. It has a comfortable bed that can accommodate 2 people, a private bathroom equipped with grab bars and an accessible shower. Everything is designed to offer a pleasant and practical stay in our hotel."
     },
     "images": [
       "/photos/rooms/standard/hdp-standard-4.webp",
@@ -215,8 +215,8 @@
       "roomType": "standard",
       "persons": 2,
       "price": {
-        "min": 75,
-        "max": 95
+        "min": 59,
+        "max": 106
       },
       "area": 13,
       "bed": {
