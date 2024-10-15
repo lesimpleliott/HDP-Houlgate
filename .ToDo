@@ -1,0 +1,27 @@
+#### TODO
+
+- [ ] Créer la section "AVIS"
+- [ ] Créer la section/page "Tarifs"
+- [ ] Créer la page Error
+- [ ] Créer une page (?) pour les CGV et Mentions légales
+
+#### IMPROVE
+
+- [ ] RoomsReview // Rediriger vers la chambre séléctionnée
+- [ ] Footer // links sur les différents items + links sur logo HDP
+
+#### NEXT LEVEL
+
+- [ ] Revoir la hero des pages "autre que Home" => version desktop pas optimale actuellement
+- [ ] Calendrier pour séléction des dates : Un seul calendrier pour sélection date arrivée / départ
+
+#### API
+
+- [ ] API Reservit - Recupérer le meilleur tarif / dispo pour le "bookForm"
+- [ ] API Google / TripAdvisor - Récupérer les avis
+
+#### ADMIN
+
+- [ ] Création compte emailJS
+- [ ] Création des templates emailJS (interne et mail client)
+- [ ] Gestion des cookies ??
