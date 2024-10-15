@@ -1,5 +1,6 @@
 import { create } from "zustand";
 
+// Type de l'état du store Zustand
 type ContactFormState = {
   fieldValidity: {
     fullName: boolean;
@@ -10,9 +11,11 @@ type ContactFormState = {
   formIsValid: boolean;
   setFieldValidity: (name: string, isValid: boolean) => void;
 
+  formWasSubmitted: boolean;
+  setFormWasSubmitted: (formWasSubmitted: boolean) => void;
+
   reset: boolean;
   setReset: (reset: boolean) => void;
-
   resetForm: () => void;
 };
 
@@ -39,7 +42,13 @@ const useContactFormStore = create<ContactFormState>((set) => ({
     });
   },
 
-  // Methode pour reinitialiser le formulaire
+  // Méthode pour savoir si le formulaire a été soumis
+  formWasSubmitted: false,
+  setFormWasSubmitted: (formWasSubmitted) => {
+    set({ formWasSubmitted });
+  },
+
+  // Méthode pour reinitialiser le formulaire
   reset: false,
   setReset: (reset) => {
     set({ reset });

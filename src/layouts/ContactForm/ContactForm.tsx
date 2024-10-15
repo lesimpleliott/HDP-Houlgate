@@ -37,7 +37,7 @@ const ContactForm = () => {
         name="message"
         inputType="textarea"
         label={t("contact.form.message.label")}
-        regex={/^.{5,}$/} // 5 caractères minimum
+        regex={/^(?=.{5,})([\s\S]*)$/} // 5 caractères minimum
         placeholder={t("contact.form.message.placeholder")}
         errorMessage={t("contact.form.message.errorMessage")}
       />

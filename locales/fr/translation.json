@@ -39,7 +39,7 @@
       },
       "email": {
         "label": "Email",
-        "placeholder": "Votre email",
+        "placeholder": "exemple@domaine.com",
         "errorMessage": "Format email invalide"
       },
       "subject": {

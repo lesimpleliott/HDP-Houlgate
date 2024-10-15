@@ -16,23 +16,21 @@ const FormField: React.FC<FormFieldText | FormFieldTextarea> = ({
   const [value, setValue] = useState("");
   const [isValid, setIsValid] = useState(false);
   const [isTouched, setIsTouched] = useState(false);
+  const [showError, setShowError] = useState(false);
+  const { formWasSubmitted, setFieldValidity, reset } = useContactFormStore();
 
-  // Accès à la fonction Zustand pour mettre à jour la validité du champ
-  const setFieldValidity = useContactFormStore(
-    (state) => state.setFieldValidity,
-  );
-
+  // Met à jour la validité du champ dans Zustand à chaque changement de `isValid`
   useEffect(() => {
-    // Met à jour la validité du champ dans Zustand à chaque changement de `isValid`
     setFieldValidity(name, isValid);
   }, [isValid, name, setFieldValidity]);
 
-  const { reset } = useContactFormStore((state) => state);
+  // Réinitialise le champ lors de la soumission du formulaire
   useEffect(() => {
     if (reset) {
       setValue("");
       setIsValid(false);
       setIsTouched(false);
+      setShowError(false);
     }
   }, [reset]);
 
@@ -42,16 +40,54 @@ const FormField: React.FC<FormFieldText | FormFieldTextarea> = ({
     const inputValue = e.target.value;
     const newIsValid = regex.test(inputValue);
 
+    // Met à jour la valeur et la validité du champ
     setValue(inputValue);
     setIsValid(newIsValid);
     setIsTouched(true);
+
+    // Masque le message d'erreur lorsque l'entrée devient valide
+    if (newIsValid) {
+      setShowError(false);
+    }
   };
 
-  const commonClass = `
-    w-full rounded-lg border-2 transition-color duration-300 shadow-md focus:shadow-lg
-    placeholder:text-sm placeholder:font-light placeholder:italic placeholder:text-gray-400 
-    ${isValid ? "border-success focus:outline-success" : "border-gray-300 focus:outline-error"}
-  `;
+  const handleBlur = () => {
+    // Affiche le message d'erreur uniquement si le champ n'est pas valide
+    if (!isValid && isTouched) {
+      setShowError(true);
+    }
+  };
+
+  // Gestion des classes CSS conditionnelles
+  const conditionalClass = [
+    // Si le champ est vide et non touché, la bordure est grise
+    !value && !isTouched && !formWasSubmitted && "border-gray-300",
+
+    // Si le champ est valide, la bordure est verte
+    isValid && "outline-success border-success",
+
+    // Si le champ n'est pas valide et est touché, la bordure est rouge
+    !isValid && isTouched && "outline-error border-error",
+
+    // Si le champ est vide et touché, la bordure est rouge
+    !value && isTouched && "outline-error border-error",
+
+    // Si le formulaire a été soumis et que le champ est invalide, la bordure est rouge
+    (showError || formWasSubmitted) && !isValid && "outline-error border-error",
+
+    // Si le champ est rempli mais non valide, la bordure est rouge
+    value && !isValid && "outline-error border-error",
+
+    // Si le champ est rempli et valide, la bordure est verte
+    value && isValid && "outline-success border-success",
+  ]
+    .filter(Boolean)
+    .join(" ");
+
+  // Gestion des classes CSS communes
+  const commonClass = `w-full rounded-lg border-2 transition-color duration-300 shadow-md focus:shadow-lg
+    placeholder:text-sm placeholder:font-light placeholder:italic placeholder:text-gray-400  
+    ${conditionalClass}`;
 
   return (
     <article className="flex w-full flex-col text-left">
@@ -71,7 +107,8 @@ const FormField: React.FC<FormFieldText | FormFieldTextarea> = ({
             placeholder={placeholder}
             value={value}
             onChange={handleChange}
-            className={`contactFormInput ${commonClass} py-1 pl-9 pr-4`}
+            onBlur={handleBlur} // Ajoute l'événement onBlur
+            className={`${commonClass} py-1 pl-9 pr-4`}
           />
         ) : (
           <textarea
@@ -79,12 +116,13 @@ const FormField: React.FC<FormFieldText | FormFieldTextarea> = ({
             placeholder={placeholder}
             value={value}
             onChange={handleChange}
+            onBlur={handleBlur} // Ajoute l'événement onBlur
             rows={6}
-            className={`contactFormInput ${commonClass} px-2 py-2`}
+            className={`${commonClass} px-2 py-2`}
           />
         )}
       </div>
-      {isTouched && !isValid && (
+      {(showError || formWasSubmitted) && !isValid && (
         <p className="mt-1 px-3 text-xs italic text-error">{errorMessage}</p>
       )}
     </article>

@@ -9,7 +9,8 @@ const FormSubmitButton = ({
   formRef: React.RefObject<HTMLFormElement>;
 }) => {
   const { t } = useTranslation();
-  const { formIsValid, fieldValidity, setReset } = useContactFormStore();
+  const { formIsValid, fieldValidity, setReset, setFormWasSubmitted } =
+    useContactFormStore();
   const [buttonColor, setButtonColor] = useState("bg-gray-400");
   const [buttonText, setButtonText] = useState(t("contact.form.submit.send"));
   const [invalidInputsCount, setInvalidInputsCount] = useState(0);
@@ -30,6 +31,7 @@ const FormSubmitButton = ({
   // Gère le clic sur le bouton
   const handleClick = async (e: React.MouseEvent<HTMLButtonElement>) => {
     e.preventDefault();
+    setFormWasSubmitted(true);
 
     // LE FORMULAIRE N'EST PAS VALIDE
     if (!formIsValid || !formRef.current) {
@@ -55,6 +57,7 @@ const FormSubmitButton = ({
       setButtonText(t("contact.form.submit.success"));
       setReset(true);
       setTimeout(() => setReset(false), 250); // Désactive `reset` après un court délai pour éviter les boucles
+      setFormWasSubmitted(false);
     } catch (err) {
       // ERROR
       console.error(err);
