@@ -5,6 +5,7 @@ type FormFieldBase = {
   regex: RegExp;
   placeholder: string;
   errorMessage: string;
+  // reset: boolean;
 };
 
 export type FormFieldText = FormFieldBase & {

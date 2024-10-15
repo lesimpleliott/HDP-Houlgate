@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import useContactFormStore from "../../stores/contactForm.store";
 import { sendEmail } from "../../utils/emailService";
@@ -9,9 +9,9 @@ const FormSubmitButton = ({
   formRef: React.RefObject<HTMLFormElement>;
 }) => {
   const { t } = useTranslation();
-  const { formIsValid, fieldValidity } = useContactFormStore();
+  const { formIsValid, fieldValidity, setReset } = useContactFormStore();
   const [buttonColor, setButtonColor] = useState("bg-gray-400");
-  const [buttonText, setButtonText] = useState("Envoyer");
+  const [buttonText, setButtonText] = useState(t("contact.form.submit.send"));
   const [invalidInputsCount, setInvalidInputsCount] = useState(0);
 
   // Compte le nombre de champs invalides
@@ -53,6 +53,8 @@ const FormSubmitButton = ({
       await sendEmail(formRef.current);
       setButtonColor("bg-green-600");
       setButtonText(t("contact.form.submit.success"));
+      setReset(true);
+      setTimeout(() => setReset(false), 250); // Désactive `reset` après un court délai pour éviter les boucles
     } catch (err) {
       // ERROR
       console.error(err);

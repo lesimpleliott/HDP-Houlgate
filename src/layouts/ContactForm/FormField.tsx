@@ -27,6 +27,15 @@ const FormField: React.FC<FormFieldText | FormFieldTextarea> = ({
     setFieldValidity(name, isValid);
   }, [isValid, name, setFieldValidity]);
 
+  const { reset } = useContactFormStore((state) => state);
+  useEffect(() => {
+    if (reset) {
+      setValue("");
+      setIsValid(false);
+      setIsTouched(false);
+    }
+  }, [reset]);
+
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
   ) => {
@@ -76,7 +85,7 @@ const FormField: React.FC<FormFieldText | FormFieldTextarea> = ({
         )}
       </div>
       {isTouched && !isValid && (
-        <p className="text-error mt-1 px-3 text-xs italic">{errorMessage}</p>
+        <p className="mt-1 px-3 text-xs italic text-error">{errorMessage}</p>
       )}
     </article>
   );

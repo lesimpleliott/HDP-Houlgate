@@ -9,6 +9,11 @@ type ContactFormState = {
   };
   formIsValid: boolean;
   setFieldValidity: (name: string, isValid: boolean) => void;
+
+  reset: boolean;
+  setReset: (reset: boolean) => void;
+
+  resetForm: () => void;
 };
 
 // Création du store Zustand
@@ -31,6 +36,24 @@ const useContactFormStore = create<ContactFormState>((set) => ({
         fieldValidity: newFieldValidity,
         formIsValid: Object.values(newFieldValidity).every(Boolean),
       };
+    });
+  },
+
+  // Methode pour reinitialiser le formulaire
+  reset: false,
+  setReset: (reset) => {
+    set({ reset });
+  },
+
+  resetForm: () => {
+    set({
+      fieldValidity: {
+        fullName: false,
+        email: false,
+        subject: false,
+        message: false,
+      },
+      formIsValid: false,
     });
   },
 }));
