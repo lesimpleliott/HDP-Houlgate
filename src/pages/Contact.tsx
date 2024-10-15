@@ -2,7 +2,7 @@ import { useTranslation } from "react-i18next";
 import ContactList from "../components/ContactList";
 import SectionHDP from "../components/SectionHDP/SectionHDP";
 import SectionTitle from "../components/SectionHDP/SectionTitle";
-import Access from "../layouts/Access";
+import Access from "../layouts/Access/Access";
 import ContactForm from "../layouts/ContactForm/ContactForm";
 import { i18nParagraphs } from "../utils/i18nParagraphs";
 

@@ -26,7 +26,7 @@ const SectionHDP = ({
   return (
     <ReversedColorContext.Provider value={reversedColor}>
       <section
-        className={`flex w-full flex-col items-center justify-center py-6 ${reversedColor ? "bg-primary-500" : "bg-transparent"}`}
+        className={`flex w-full flex-col items-center justify-center py-6 ${reversedColor ? "bg-primary-500 text-primary-100" : "bg-transparent"}`}
       >
         <div className={`max-w-custom ${className}`}>{children}</div>
       </section>
