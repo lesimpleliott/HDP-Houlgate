@@ -1,4 +1,9 @@
 {
+  "404": {
+    "errorMessage": "Error 404 - Page not found",
+    "homeButton": "Back to home"
+  },
+
   "access": {
     "title": "Visit us"
   },

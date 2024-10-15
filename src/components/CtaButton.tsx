@@ -43,7 +43,7 @@ const CtaButton = ({
   const secondary =
     "bg-white border-2 border-primary-500 text-primary-500 hover:bg-primary-500 hover:text-white transition-all duration-300";
 
-  const baseStyle = `cursor-pointer min-w-24 h-10 text-sm rounded-full px-4 flex justify-center items-center font-medium shadow-md ${color === "main" ? main : secondary}`;
+  const baseStyle = `cursor-pointer min-w-24 min-h-10 text-sm rounded-full px-4 flex justify-center items-center font-medium shadow-md ${color === "main" ? main : secondary}`;
 
   // Rendu conditionnel du bouton en tant que lien <a>
   if (type === "link") {

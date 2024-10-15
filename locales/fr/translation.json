@@ -1,4 +1,9 @@
 {
+  "404": {
+    "errorMessage": "Erreur 404 - La page est introuvable",
+    "homeButton": "Retour à l'accueil"
+  },
+
   "access": {
     "title": "Rendez-nous visite"
   },
