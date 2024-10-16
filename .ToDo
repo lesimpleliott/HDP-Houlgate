@@ -1,19 +1,28 @@
 #### TODO
 
-- [ ] Créer la section "AVIS"
+- [x] Créer la section "AVIS"
 - [ ] Créer la section/page "Tarifs"
 - [x] Créer la page Error
-- [ ] Créer une page (?) pour les CGV et Mentions légales
+- [ ] Créer une page (?) pour les CGV et Mentions légales ... sur la page Tarifs ?
 
 #### IMPROVE
 
-- [ ] RoomsReview // Rediriger vers la chambre séléctionnée
+- [x] Reviews // améliorer et intégrer reviews depuis API
+- [ ] RoomsPreview // Rediriger vers la chambre séléctionnée
 - [ ] Footer // links sur les différents items + links sur logo HDP
+- [ ] localStorage pour le formulaire de contact si pas envoyé ... on conserve le message
+- [ ] BookForm // Reservation le jour-J ... passé une ceraine heure, il faut passer à J+1
+
+#### STYLES VARIOUS
+
+- [ ] RoomsOverview Card // revoir le spacing entre la photo et le titre
+- [ ] Navbar // Revoir la 'blancheur' et l'opacité de la navbar
 
 #### NEXT LEVEL
 
 - [ ] Revoir la hero des pages "autre que Home" => version desktop pas optimale actuellement
 - [ ] Calendrier pour séléction des dates : Un seul calendrier pour sélection date arrivée / départ
+- [ ] Ajouter un toaster/notifiaction envoi de message
 
 #### API
 

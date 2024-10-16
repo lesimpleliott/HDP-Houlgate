@@ -1,6 +1,7 @@
 import BookBanner from "../layouts/BookBanner";
 import Facilities from "../layouts/Facilities/Facilities";
 import HeroBanner from "../layouts/HeroBanner";
+import Reviews from "../layouts/Reviews/Reviews";
 import RoomsOverview from "../layouts/Rooms/RoomsOverview";
 
 const Home = () => {
@@ -10,6 +11,7 @@ const Home = () => {
       <Facilities />
       <RoomsOverview />
       <BookBanner />
+      <Reviews />
     </main>
   );
 };

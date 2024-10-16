@@ -138,6 +138,14 @@
     "contact": "Contact"
   },
 
+  "reviews": {
+    "title": "Customer reviews",
+    "paragraph": [
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      "Lorem ipsum dolor sit amet consectetur adipisicing. Rerum et facere eaque eveniet voluptate omnis hic cum earum!"
+    ]
+  },
+
   "rooms": {
     "title": "Rooms",
     "paragraph": [
