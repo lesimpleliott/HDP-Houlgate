@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 
 const tailwindBreakpoints: { [key: string]: number } = {
   xs: 0,
+  xsm: 375,
   sm: 640,
   md: 768,
   lg: 1024,
