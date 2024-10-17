@@ -3,7 +3,7 @@ import roomsData from "../assets/data/rooms.json";
 import LogoHDP from "../components/LogoHDP";
 import SectionHDP from "../components/SectionHDP/SectionHDP";
 import SectionTitle from "../components/SectionHDP/SectionTitle";
-import useTailwindBreakpoint from "../hooks/useTailwindBreakpoint";
+import useTailwindBreakpoints from "../hooks/useTailwindBreakpoint";
 import BookBanner from "../layouts/BookBanner";
 import RoomsFullView from "../layouts/Rooms/RoomsFullView";
 import { RoomTypes } from "../types/RoomTypes";
@@ -12,7 +12,7 @@ const rooms: RoomTypes[] = roomsData as RoomTypes[];
 
 const Rooms = () => {
   const { t } = useTranslation();
-  const isSmScreen = useTailwindBreakpoint("sm");
+  const breakpoint = useTailwindBreakpoints();
 
   return (
     <main className="my-16">
@@ -24,7 +24,7 @@ const Rooms = () => {
           className="h-80 w-full object-cover brightness-50 filter"
         />
         <LogoHDP
-          type={isSmScreen ? "horizontal" : "icon"}
+          type={breakpoint.sm ? "horizontal" : "icon"}
           className="absolute left-1/2 top-1/2 min-h-full min-w-full -translate-x-1/2 -translate-y-1/2 fill-white/5"
         />
         <h1 className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-5xl font-bold text-white">
@@ -33,7 +33,7 @@ const Rooms = () => {
       </section>
 
       {/* ROOMS */}
-      <SectionHDP className="!px-0 flex flex-col gap-6">
+      <SectionHDP className="flex flex-col gap-6 !px-0">
         <div className="flex flex-col gap-4 px-4 md:px-10">
           <SectionTitle title={t("rooms.title")} />
           {i18nParagraphs("rooms.paragraph")}

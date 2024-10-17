@@ -36,7 +36,7 @@ export default {
         shake: "shake 300ms ease-in-out",
       },
       screens: {
-        xsm: "375px",
+        xsm: "450px",
       },
     },
   },

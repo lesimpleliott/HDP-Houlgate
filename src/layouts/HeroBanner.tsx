@@ -4,23 +4,7 @@ import { i18nParagraphs } from "../utils/i18nParagraphs";
 import BookingForm from "./BookingForm/BookingForm";
 
 const HeroBanner = ({ className }: { className?: string }) => {
-  const isDesktop = useTailwindBreakpoint("md");
-  const isMobile = !isDesktop;
-
-  // // Element commun à la version mobile et desktop
-  // // TITRE PRINCIPAL (H1) Dans le cas de la suppression du logo SVG
-  // // !! Reimporter {t} depuis react-i18next !!
-  // const titleContent = (
-  //   <h1 className="font-title text-center text-5xl font-medium text-white md:text-left md:text-primary-500">
-  //     <span className="flex flex-col items-center justify-center gap-2 md:flex-row md:items-end md:justify-start">
-  //       <LogoHDP className="w-16 md:w-12" />
-  //       <p>Houlgate</p>
-  //     </span>
-  //     <p className="mr-1 inline">{t("home.title")}</p>
-  //     <i className="fa-solid fa-star inline align-super text-xs"></i>
-  //     <i className="fa-solid fa-star inline align-super text-xs"></i>
-  //   </h1>
-  // );
+  const { xs, md } = useTailwindBreakpoint();
 
   // PARAGRAPHE
   const textContent = i18nParagraphs("home.paragraph");
@@ -34,7 +18,7 @@ const HeroBanner = ({ className }: { className?: string }) => {
   return (
     <>
       {/* MOBILE */}
-      {isMobile && (
+      {xs && (
         <section
           id="heroBanner-mobile"
           className={`flex flex-col items-center gap-4 pt-28 md:hidden ${className}`}
@@ -65,7 +49,7 @@ const HeroBanner = ({ className }: { className?: string }) => {
       )}
 
       {/* DESKTOP */}
-      {isDesktop && (
+      {md && (
         <section
           id="heroBanner-desktop"
           className={`max-w-custom flex w-full items-center justify-center`}
