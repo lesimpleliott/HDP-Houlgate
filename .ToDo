@@ -4,14 +4,16 @@
 - [ ] Créer la section/page "Tarifs"
 - [x] Créer la page Error
 - [ ] Créer une page (?) pour les CGV et Mentions légales ... sur la page Tarifs ?
+- [x] Ajouter encart // Offre spéciale
 
 #### IMPROVE
 
 - [x] Reviews // améliorer et intégrer reviews depuis API
 - [ ] RoomsPreview // Rediriger vers la chambre séléctionnée
-- [ ] Footer // links sur les différents items + links sur logo HDP
-- [ ] localStorage pour le formulaire de contact si pas envoyé ... on conserve le message
-- [ ] BookForm // Reservation le jour-J ... passé une ceraine heure, il faut passer à J+1
+- [ ] Footer // links sur les différents items
+- [ ] Footer // links sur logo HDP
+- [ ] Contact // Ajout des données au localStorage si pas envoyé ...
+- [ ] BookForm // Reservation le jour-J ... passé 19h, il faut passer à J+1
 
 #### STYLES VARIOUS
 
