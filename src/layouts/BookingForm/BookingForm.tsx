@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import {
   getDay,
+  getMinBookDate,
   getMonth,
   getNextDay,
   getNightCount,
@@ -12,7 +13,8 @@ import BookingFormElement from "./BookingFormElement";
 
 const BookingForm = ({ className }: { className?: string }) => {
   const { t, i18n } = useTranslation();
-  const [checkin, setCheckin] = useState(getTodayDate());
+  const cutoffTime = { hours: 19, minutes: 0 }; // Heure limite de réservation pour le jour même
+  const [checkin, setCheckin] = useState(getMinBookDate(cutoffTime));
   const [checkout, setCheckout] = useState(getNextDay(checkin));
   const [checkoutManuallyChanged, setCheckoutManuallyChanged] = useState(false);
   const [occupation, setOccupation] = useState(2);

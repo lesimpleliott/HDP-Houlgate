@@ -1,10 +1,10 @@
 #### TODO
 
 - [x] Créer la section "AVIS"
-- [ ] Créer la section/page "Tarifs"
 - [x] Créer la page Error
-- [ ] Créer une page (?) pour les CGV et Mentions légales ... sur la page Tarifs ?
 - [x] Ajouter encart // Offre spéciale
+- [ ] Créer la section/page "Tarifs"
+- [ ] Créer une page (?) pour les CGV et Mentions légales ... sur la page Tarifs ?
 
 #### IMPROVE
 
@@ -13,7 +13,8 @@
 - [ ] Footer // links sur les différents items
 - [ ] Footer // links sur logo HDP
 - [ ] Contact // Ajout des données au localStorage si pas envoyé ...
-- [ ] BookForm // Reservation le jour-J ... passé 19h, il faut passer à J+1
+- [x] BookForm // Reservation le jour-J ... passé 19h, il faut passer à J+1
+- [ ] BookForm // update methode et mise à jour de la date si l'heure limite est depassée.
 
 #### STYLES VARIOUS
 
