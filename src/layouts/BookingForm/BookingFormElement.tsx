@@ -54,9 +54,7 @@ const BookingFormElement = ({
           <p className={`${lineOne} text-white`}>
             {`${nightCount} ${t("common.night", { count: nightCount })}`}
           </p>
-          <p
-            className={`${lineTwo} text-white`}
-          >{`${t("common.from")} ${price}€`}</p>
+          <p className={`${lineTwo} text-white`}>{price}</p>
         </div>
       </a>
     );

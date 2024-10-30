@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
+import useBestPrice from "../../hooks/useBestPrice";
 import {
   getDay,
   getMinBookDate,
@@ -13,7 +14,7 @@ import BookingFormElement from "./BookingFormElement";
 
 const BookingForm = ({ className }: { className?: string }) => {
   const { t, i18n } = useTranslation();
-  const cutoffTime = { hours: 19, minutes: 0 }; // Heure limite de réservation pour le jour même
+  const cutoffTime = { hours: 20, minutes: 0 }; // Heure limite de réservation pour le jour même
   const [checkin, setCheckin] = useState(getMinBookDate(cutoffTime));
   const [checkout, setCheckout] = useState(getNextDay(checkin));
   const [checkoutManuallyChanged, setCheckoutManuallyChanged] = useState(false);
@@ -21,6 +22,13 @@ const BookingForm = ({ className }: { className?: string }) => {
   const [nightCount, setNightCount] = useState(
     getNightCount(checkin, checkout),
   );
+  const hotelId = import.meta.env.VITE_RESERVIT_HOTELID;
+
+  // Utilisation du hook pour récupérer le meilleur tarif
+  const { price, loading, error } = useBestPrice({
+    fromDate: checkin,
+    toDate: checkout,
+  });
 
   // Mettre à jour le checkout lorsque le checkin change
   useEffect(() => {
@@ -29,12 +37,12 @@ const BookingForm = ({ className }: { className?: string }) => {
     }
   }, [checkin, checkoutManuallyChanged]);
 
-  // Mettre à jour le checkout manuellement changé
+  // Mettre à jour le nombre de nuits lorsque le checkout change
   useEffect(() => {
     setNightCount(getNightCount(checkin, checkout));
   }, [checkin, checkout]);
 
-  // Mettre à jour le nombre de nuits lorsque le checkout change
+  // Mettre à jour le checkout manuellement changé
   const handleCheckoutChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const newCheckoutDate = e.target.value;
     if (new Date(newCheckoutDate) < new Date(checkin)) {
@@ -45,7 +53,7 @@ const BookingForm = ({ className }: { className?: string }) => {
     setCheckoutManuallyChanged(true);
   };
 
-  // Mettre à jour le checkout lorsque le checkin change
+  // Mettre à jour le checkin lorsque la date de checkin change
   const handleCheckinChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const newCheckinDate = e.target.value;
     setCheckin(newCheckinDate);
@@ -53,13 +61,13 @@ const BookingForm = ({ className }: { className?: string }) => {
     // Calcule le nouveau checkout basé sur le nombre de nuits
     const newCheckoutDate = new Date(newCheckinDate);
     newCheckoutDate.setDate(newCheckoutDate.getDate() + nightCount);
-    setCheckout(newCheckoutDate.toISOString().split("bookingForm.T")[0]);
+    setCheckout(newCheckoutDate.toISOString().split("T")[0]);
   };
 
   const buildUrl = () => {
     const url = new URL("https://hotel.reservit.com/reservit/reserhotel.php");
     url.searchParams.append("lang", i18n.language); // Langue
-    url.searchParams.append("hotelid", "237827"); // ID de l'hôtel
+    url.searchParams.append("hotelid", hotelId); // ID de l'hôtel
     url.searchParams.append("fday", getDay(checkin)); // Checkin - Jour
     url.searchParams.append("fmonth", getMonth(checkin)); // Checkin - Mois
     url.searchParams.append("fyear", getYear(checkin)); // Checkin - Année
@@ -124,7 +132,13 @@ const BookingForm = ({ className }: { className?: string }) => {
           type="link"
           href={buildUrl()}
           icon={{ src: "/icons/search.svg", alt: "Search icon" }}
-          price={666}
+          price={
+            loading
+              ? "Chargement..."
+              : error
+                ? error
+                : `${t("common.from")} ${price}€`
+          }
           nightCount={nightCount}
         />
       </div>

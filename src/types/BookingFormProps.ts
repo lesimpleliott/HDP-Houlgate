@@ -23,7 +23,7 @@ type BookingFormSubmitProps = BookingFormElementBase & {
   href: string;
   label?: never;
   inputProps?: never;
-  price: number;
+  price: string | number;
   nightCount: number;
   onClick?: React.MouseEventHandler<HTMLButtonElement>;
 };

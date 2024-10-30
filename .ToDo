@@ -8,7 +8,7 @@
 
 #### IMPROVE
 
-- [x] Reviews // améliorer et intégrer reviews depuis API
+- [x] Reviews // améliorer et intégrer reviews
 - [ ] RoomsPreview // Rediriger vers la chambre séléctionnée
 - [ ] Footer // links sur les différents items
 - [ ] Footer // links sur logo HDP
@@ -29,7 +29,7 @@
 
 #### API
 
-- [ ] API Reservit - Recupérer le meilleur tarif / dispo pour le "bookForm"
+- [x] API Reservit - Recupérer le meilleur tarif / dispo pour le "bookForm"
 - [ ] API Google / TripAdvisor - Récupérer les avis
 
 #### ADMIN
@@ -37,3 +37,7 @@
 - [ ] Création compte emailJS
 - [ ] Création des templates emailJS (interne et mail client)
 - [ ] Gestion des cookies ??
+
+#### IDEA
+
+- [N] FAQ ??
